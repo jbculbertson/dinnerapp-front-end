@@ -11,10 +11,9 @@ $(() => {
 // const example = require('./example')
 
 $(() => {
-
  // NOT WORKING FOR SOME REASON
   // $('#log-in-button').click(function () {
-  //   ('.jumbotron').hide()
+  //   ('.lander').toggle()
   // })
 })
 
