@@ -10,7 +10,7 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 }
 
 .features {
-  display: none;
+  // display: none;
 }
 
 .jumbotron {
@@ -22,6 +22,19 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
   height: 100vh;
 }
 
+// .message-board {
+h2 {
+  background-color: #3D9970;
+  color: black;
+  text-align: center;
+}
+
 .navbar {
+  // display: none;
   margin-bottom: 0;
+}
+
+#myCarousel {
+  margin: 0 auto;
+  max-width: 600px;
 }
