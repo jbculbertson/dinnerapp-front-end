@@ -14,6 +14,7 @@
 </head>
 
 <!-- OVERALL CONTAINER -->
+
 <body class="container-fluid">
 
   <!-- NAVBAR -->
@@ -41,26 +42,27 @@
 
         <!-- CHANGE PASSWORD MODAL -->
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#change-password-modal">
   Change Password
 </button>
-
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="change-password-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Changel Password</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Change Password</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
               </div>
               <div class="modal-body">
-                ...
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <form id="change-password">
+                  <fieldset>
+                    <input type="password" name="passwords[old]" value="" placeholder="Old Password">
+                    <input type="password" name="passwords[new]" value="" placeholder="New Password">
+                    <input type="submit" name="submit" value="Change Password">
+                  </fieldset>
+                </form>
               </div>
             </div>
           </div>
@@ -70,36 +72,81 @@
     <!-- /.navbar-collapse -->
   </nav>
 
-<!-- FEATURE ROW - NEXT WEEKS MEALS AND GROCERY LIST -->
+  <!-- FEATURE ROW - NEXT WEEKS MEALS AND GROCERY LIST -->
   <div class="features">
-  <div class="row">
+    <div class="row">
 
-    <div class="col-xs-6">
-    </div>
-    <div class="col-xs-6">
-      <button type="button" class="btn btn-primary" data-toggle="modal">
+      <div class="col-xs-6">
+      </div>
+      <div class="col-xs-6">
+        <button type="button" class="btn btn-primary" data-toggle="modal">
     Next Week's Meals
     </button>
-      <button type="button" class="btn btn-primary" data-toggle="modal">
+        <button type="button" class="btn btn-primary" data-toggle="modal">
     Grocery List
     </button>
+      </div>
     </div>
-  </div>
   </div>
 
   <!-- JUMBOTRON -->
   <div class="lander">
-  <div class="jumbotron">
-    <h1 class="display-3">What's for dinner?</h1>
-    <p class="lead">Tired of ordering out because you don't have the ingredients you need to make your favorite meal?</p>
-    <hr class="my-4">
-    <p>This app makes meal planning easy and fun!.</p>
-    <p class="lead">
-      <a class="btn btn-primary btn-lg" href="#" role="button">Sign Up</a>
-      <a class="btn btn-primary btn-lg" href="#" role="button" id="log-in-button">Log In</a>
-    </p>
+    <div class="jumbotron">
+      <h1 class="display-3">What's for dinner?</h1>
+      <p class="lead">Tired of ordering out because you don't have the ingredients you need to make your favorite meal?</p>
+      <hr class="my-4">
+      <p>This app makes meal planning easy and fun!.</p>
+      <p class="lead">
+        <!-- SIGN UP MODAL -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-up-modal">
+      Sign Up
+      </button>
+        <div class="modal fade" id="sign-up-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+              </div>
+              <div class="modal-body">
+                <form id="sign-up">
+                  <input class="sign-up" type="email" name="credentials[email]" value="" placeholder="abc@example.com">
+                  <input class="sign-up" type="password" name="credentials[password]" value="" placeholder="password">
+                  <input class="sign-up" type="password" name="credentials[password_confirmation]" value="" placeholder="password confirmation">
+                  <input type="submit" name="submit" value="Sign up!">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SIGN IN MODAL -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-in-modal">
+      Sign In
+      </button>
+        <div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+              </div>
+              <div class="modal-body">
+                <form id="sign-in">
+                  <input class="sign-in" type="text" name="credentials[email]" value="" placeholder="abc@example.com">
+                  <input class="sign-in" type="password" name="credentials[password]" value="" placeholder="password">
+                  <input type="submit" name="submit" value="Sign in!">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </p>
+    </div>
   </div>
-</div>
 
   <!-- CAROUSEL -->
   <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
