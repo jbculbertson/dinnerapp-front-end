@@ -3,9 +3,11 @@ const store = require('../store')
 
 const signUpSuccess = (data) => {
   store.user = data.user
+  $('#sign-up-modal').modal('hide')
 }
 
 const signUpFailure = () => {
+  console.error()
 }
 
 const signInSuccess = (data) => {
