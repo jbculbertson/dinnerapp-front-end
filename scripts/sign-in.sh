@@ -1,4 +1,4 @@
-curl "https://aqueous-atoll-85096.herokuapp.com/sign-in" \
+curl "http://localhost:4741/sign-in" \
   --include \
   --request POST \
   --header "Content-Type: application/json" \

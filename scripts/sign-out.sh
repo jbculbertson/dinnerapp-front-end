@@ -1,4 +1,4 @@
-curl "https://aqueous-atoll-85096.herokuapp.com/sign-out/${ID}" \
+curl "http://localhost:4741/sign-out/${ID}" \
   --include \
   --request DELETE \
   --header "Authorization: Token token=${TOKEN}" \
