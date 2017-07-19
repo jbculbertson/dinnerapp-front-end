@@ -3,12 +3,12 @@ const store = require('../store')
 
 const signUpSuccess = (data) => {
   store.user = data.user
-  $('.message-board').text('Thanks for signing up ' + store.user.email + '.  Please login.')
   $('#sign-up-modal').modal('hide')
 }
 
 const signUpFailure = () => {
-  $('.message-board').text('We may already have an account with that email')
+  $('.sign-up-modal-header').text('We may already have an account with that email')
+  $('.sign-up').val('')
 }
 
 const signInSuccess = (data) => {
@@ -23,11 +23,10 @@ const signInSuccess = (data) => {
 }
 
 const signInFailure = () => {
-  $('#message-board').text('Please make sure you have the correct credentials')
+  $('.sign-in-modal-header').text('Please make sure you have the correct credentials')
 }
 
 const signOutSuccess = () => {
-  console.log('successful sign-out')
   $('.sign-in').val('')
   $('.sign-up').val('')
   $('.jumbotron').show()
@@ -47,7 +46,7 @@ const changePasswordSuccess = () => {
 }
 
 const changePasswordFailure = () => {
-  $('.message-board').text('Incorrect credentials')
+  $('.change-password-modal-header').text('Incorrect credentials.')
 }
 
 module.exports = {

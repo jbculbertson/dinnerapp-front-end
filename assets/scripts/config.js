@@ -2,7 +2,8 @@
 
 const config = {
   apiOrigins: {
-    production: 'http://localhost:4741/'
+    production: 'https://whispering-inlet-86823.herokuapp.com',
+    development: 'http://localhost:4741/'
   }
 }
 

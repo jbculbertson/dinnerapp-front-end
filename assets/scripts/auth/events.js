@@ -5,11 +5,22 @@ const api = require('./api')
 const ui = require('./ui')
 
 const onSignUp = function (event) {
-  const data = getFormFields(this)
-  console.log(data)
   event.preventDefault()
+  const data = getFormFields(this)
   api.signUp(data)
     .then(ui.signUpSuccess)
+
+    //   function (response) {
+    //   const loginData = {
+    //     credentials: {
+    //       email: data.credentials.email,
+    //       password: data.credentials.password
+    //     }
+    //   }
+    //   api.signIn(loginData)
+    //     .then(ui.signInSuccess)
+    //     .catch(ui.signInFailure)
+    // })
     .catch(ui.signUpFailure)
 }
 
