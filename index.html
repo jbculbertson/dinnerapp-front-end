@@ -132,7 +132,12 @@
             </button>
                     </div>
                     <div class="modal-body">
-                      <!-- PLACEHOLDER FOR CREATE RECIPE -->
+                      <form id="create-recipe">
+                        <input class="create-recipe" type="text" name="recipe[name]" value="" placeholder="recipe name">
+                        <input class="create-recipe" type="text" name="recipe[ingredients]" value="" placeholder="ingredients">
+                        <input class="create-recipe" type="text" name="recipe[link]" value="" placeholder="link to recipe">
+                        <input type="submit" name="submit" value="Create Recipe!">
+                      </form>
                     </div>
                   </div>
                 </div>
@@ -159,6 +164,9 @@
                 </div>
               </div>
               <!-- END OF UPDATE RECIPE MODAL -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" id="show-all-recipes">
+            Show All Recipes
+            </button>
             </div>
           </div>
         </div>
