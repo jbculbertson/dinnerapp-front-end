@@ -1,15 +1,14 @@
-'use strict'
 
 {{#each recipes as |recipe|}}
 
 
-  <h1 data-id="{{recipe.id}}">Title: {{recipe.name}}</h1>
-  <!-- <div>
-    {{#if recipe.description}}
-      {{book.description}}
-    {{else}}
-      No description.
-    {{/if}}
-  </div> -->
-
+<div class="card">
+  <div class="card-block">
+    <h4 class="card-title" id="{{recipe.id}}">{{recipe.id}} {{recipe.name}}</h4>
+    <h3 class="card-link">{{recipe.link}}</h3>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li>{{recipe.ingredients}}</li>
+  </ul>
+</div>
 {{/each}}

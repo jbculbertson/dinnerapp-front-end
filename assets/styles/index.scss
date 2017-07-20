@@ -9,7 +9,11 @@ h2 {
 }
 
 .card {
+  border: 2px solid black;
+  float: left;
+  margin: 5px;
   text-align: center;
+  width: 20rem;
 }
 
 .container-fluid {
@@ -29,6 +33,9 @@ h2 {
   height: 100vh;
 }
 
+.list-group {
+  list-style-type: none;
+}
 .messages {
   display: none;
 }

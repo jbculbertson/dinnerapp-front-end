@@ -3,7 +3,8 @@ const store = require('../store')
 const showRecipesTemplate = require('../templates/show-recipes.handlebars')
 
 const createRecipeSuccess = (data) => {
-  console.log(data)
+  $('.create-recipe').val('')
+  $('#create-recipe-modal').modal('hide')
 }
 
 const createRecipeFailure = () => {
@@ -12,16 +13,25 @@ const createRecipeFailure = () => {
 const showAllRecipesSuccess = (data) => {
   store.recipe = data.recipe
   let showRecipesHtml = showRecipesTemplate({ recipes: data.recipes })
-  $('.message-board').append(showRecipesHtml)
-  console.log(data)
+  $('.recipe-board').append(showRecipesHtml)
 }
 
 const showAllRecipesFailure = () => {
+}
+
+const deleteRecipeSuccess = () => {
+  $('.delete-recipe').val('')
+  $('#delete-recipe-modal').modal('hide')
+}
+
+const deleteRecipeFailure = () => {
 }
 
 module.exports = {
   createRecipeSuccess,
   createRecipeFailure,
   showAllRecipesSuccess,
-  showAllRecipesFailure
+  showAllRecipesFailure,
+  deleteRecipeSuccess,
+  deleteRecipeFailure
 }

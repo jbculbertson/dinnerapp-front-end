@@ -11,6 +11,13 @@ const createRecipe = function (data) {
   })
 }
 
+const deleteRecipe = function (data) {
+  return $.ajax({
+    url: config.apiOrigin + '/recipes/' + data,
+    method: 'DELETE'
+  })
+}
+
 const showAllRecipes = function (data) {
   return $.ajax({
     url: config.apiOrigin + '/recipes',
@@ -21,5 +28,6 @@ const showAllRecipes = function (data) {
 
 module.exports = {
   createRecipe,
-  showAllRecipes
+  showAllRecipes,
+  deleteRecipe
 }
