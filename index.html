@@ -74,7 +74,7 @@
   <div class="features">
     <div class="row">
       <div class="col-xs-12">
-          <!-- NEXT WEEKS MEALS MODAL -->
+        <!-- NEXT WEEKS MEALS MODAL -->
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#menu-modal" id="show-menu-button">
       Next Weeks Meals
       </button>
@@ -98,230 +98,249 @@
 
         <!-- GROCERY LIST MODAL -->
 
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#grocery-modal">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#grocery-modal">
             Grocery List
             </button>
-              <div class="modal fade" id="grocery-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Grocery List</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <div class="modal fade" id="grocery-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Grocery List</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-                    </div>
-                    <div class="modal-body">
-                      <!-- PLACEHOLDER FOR GROCERY LIST -->
-                    </div>
-                  </div>
-                </div>
               </div>
-              <!-- END OF GROCERY MODAL -->
+              <div class="modal-body">
+                <!-- PLACEHOLDER FOR GROCERY LIST -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END OF GROCERY MODAL -->
 
         <!-- CREATE RECIPE MODAL -->
 
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#create-recipe-modal">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#create-recipe-modal">
             Create Recipe
             </button>
-              <div class="modal fade" id="create-recipe-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Create Recipe</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <div class="modal fade" id="create-recipe-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create Recipe</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-                    </div>
-                    <div class="modal-body">
-                      <form id="create-recipe">
-                        <input class="create-recipe" type="text" name="recipe[name]" value="" placeholder="recipe name">
-                        <input class="create-recipe" type="text" name="recipe[ingredients]" value="" placeholder="ingredients">
-                        <input type="submit" name="submit" value="Create Recipe!">
-                      </form>
-                    </div>
-                  </div>
-                </div>
               </div>
-              <!-- END OF CREATE RECIPE MODAL -->
+              <div class="modal-body">
+                <form id="create-recipe">
+                  <input class="create-recipe" type="text" name="recipe[name]" value="" placeholder="recipe name">
+                  <input class="create-recipe" type="text" name="recipe[ingredient1]" value="" placeholder="ingredients">
+                  <input class="create-recipe" type="text" name="recipe[ingredient2]" value="" placeholder="ingredients">
+                  <input class="create-recipe" type="text" name="recipe[ingredient3]" value="" placeholder="ingredients">
+                  <input class="create-recipe" type="text" name="recipe[ingredient4]" value="" placeholder="ingredients">
+                  <input class="create-recipe" type="text" name="recipe[ingredient5]" value="" placeholder="ingredients">
+                  <input class="create-recipe" type="text" name="recipe[ingredient6]" value="" placeholder="ingredients">
+                  <input class="create-recipe" type="text" name="recipe[ingredient7]" value="" placeholder="ingredients">
+                  <input class="create-recipe" type="text" name="recipe[ingredient8]" value="" placeholder="ingredients">
+                  <input class="create-recipe" type="text" name="recipe[ingredient9]" value="" placeholder="ingredients">
+                  <input class="create-recipe" type="text" name="recipe[ingredient10]" value="" placeholder="ingredients">
+                  <input type="submit" name="submit" value="Create Recipe!">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END OF CREATE RECIPE MODAL -->
         <!-- DELETE RECIPE MODAL -->
 
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#delete-recipe-modal">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#delete-recipe-modal">
             Delete Recipe
             </button>
-              <div class="modal fade" id="delete-recipe-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Delete Recipe</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <div class="modal fade" id="delete-recipe-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Delete Recipe</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-                    </div>
-                    <div class="modal-body">
-                      <form id="delete-recipe">
-                        <input class="delete-recipe" type="text" name="recipe[id]" value="" placeholder="recipe id">
-                        <input type="submit" name="submit" value="Delete Recipe!">
-                      </form>
-                    </div>
-                  </div>
-                </div>
               </div>
-              <!-- END OF DELETE RECIPE MODAL -->
+              <div class="modal-body">
+                <form id="delete-recipe">
+                  <input class="delete-recipe" type="text" name="recipe[id]" value="" placeholder="recipe id">
+                  <input type="submit" name="submit" value="Delete Recipe!">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END OF DELETE RECIPE MODAL -->
         <!-- UPDATE RECIPE MODAL -->
 
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#update-recipe-modal">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#update-recipe-modal">
             Update Recipe
             </button>
-              <div class="modal fade" id="update-recipe-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Update Recipe</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <div class="modal fade" id="update-recipe-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Update Recipe</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-                    </div>
-                    <div class="modal-body">
-                      <form id="update-recipe">
-                        <input class="update-recipe" type="text" name="recipe[id]" value="" placeholder="recipe id">
-                        <input class="update-recipe" type="text" name="recipe[name]" value="" placeholder="recipe name">
-                        <input class="update-recipe" type="text" name="recipe[ingredients]" value="" placeholder="ingredients">
-                        <input type="submit" name="submit" value="Update Recipe!">
-                      </form>
-                    </div>
-                  </div>
-                </div>
               </div>
-              <!-- END OF UPDATE RECIPE MODAL -->
-              <button type="button" class="btn btn-primary" data-toggle="modal" id="show-all-recipes">
+              <div class="modal-body">
+                <form id="update-recipe">
+                  <input class="update-recipe" type="text" name="recipe[id]" value="" placeholder="recipe id">
+                  <input class="update-recipe" type="text" name="recipe[name]" value="" placeholder="recipe name">
+                  <input class="update-recipe" type="text" name="recipe[ingredient1]" value="" placeholder="ingredients">
+                  <input class="update-recipe" type="text" name="recipe[ingredient2]" value="" placeholder="ingredients">
+                  <input class="update-recipe" type="text" name="recipe[ingredient3]" value="" placeholder="ingredients">
+                  <input class="update-recipe" type="text" name="recipe[ingredient4]" value="" placeholder="ingredients">
+                  <input class="update-recipe" type="text" name="recipe[ingredient5]" value="" placeholder="ingredients">
+                  <input class="update-recipe" type="text" name="recipe[ingredient6]" value="" placeholder="ingredients">
+                  <input class="update-recipe" type="text" name="recipe[ingredient7]" value="" placeholder="ingredients">
+                  <input class="update-recipe" type="text" name="recipe[ingredient8]" value="" placeholder="ingredients">
+                  <input class="update-recipe" type="text" name="recipe[ingredient9]" value="" placeholder="ingredients">
+                  <input class="update-recipe" type="text" name="recipe[ingredient10]" value="" placeholder="ingredients">
+                  <input type="submit" name="submit" value="Update Recipe!">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END OF UPDATE RECIPE MODAL -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" id="show-all-recipes">
             Show All Recipes
             </button>
-            </div>
-          </div>
-        </div>
+      </div>
+    </div>
+  </div>
 
-<!-- MESSAGE BOARD ROW -->
-        <!-- <div class="message-board-row"> -->
-          <div class="messages">
-            <div class="col-xs-12">
-              <h2 class="message-board">IMPORTANT MESSAGE BOARD</h2>
-            </div>
-          </div>
-        <!-- </div> -->
+  <!-- MESSAGE BOARD ROW -->
+  <!-- <div class="message-board-row"> -->
+  <div class="messages">
+    <div class="col-xs-12">
+      <h2 class="message-board">IMPORTANT MESSAGE BOARD</h2>
+    </div>
+  </div>
+  <!-- </div> -->
 
-        <!-- JUMBOTRON -->
-        <div class="lander">
-          <div class="jumbotron">
-            <h1 class="display-3">What's for dinner?</h1>
-            <p class="lead">Tired of ordering out because you don't have the ingredients you need to make your favorite meal?</p>
-            <hr class="my-4">
-            <p>This app makes meal planning easy and fun!.</p>
-            <p class="lead">
-              <!-- SIGN UP MODAL -->
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-up-modal">
+  <!-- JUMBOTRON -->
+  <div class="lander">
+    <div class="jumbotron">
+      <h1 class="display-3">What's for dinner?</h1>
+      <p class="lead">Tired of ordering out because you don't have the ingredients you need to make your favorite meal?</p>
+      <hr class="my-4">
+      <p>This app makes meal planning easy and fun!.</p>
+      <p class="lead">
+        <!-- SIGN UP MODAL -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-up-modal">
       Sign Up
       </button>
-              <div class="modal fade" id="sign-up-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <div class="modal fade" id="sign-up-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
-                    </div>
-                    <div class="modal-body">
-                      <h3 class="sign-up-modal-header"></h3>
-                      <form id="sign-up">
-                        <input class="sign-up" type="email" name="credentials[email]" value="" placeholder="abc@example.com">
-                        <input class="sign-up" type="password" name="credentials[password]" value="" placeholder="password">
-                        <input class="sign-up" type="password" name="credentials[password_confirmation]" value="" placeholder="password confirmation">
-                        <input type="submit" name="submit" value="Sign up!">
-                      </form>
-                    </div>
-                  </div>
-                </div>
               </div>
-              <!-- SIGN IN MODAL -->
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-in-modal">
+              <div class="modal-body">
+                <h3 class="sign-up-modal-header"></h3>
+                <form id="sign-up">
+                  <input class="sign-up" type="email" name="credentials[email]" value="" placeholder="abc@example.com">
+                  <input class="sign-up" type="password" name="credentials[password]" value="" placeholder="password">
+                  <input class="sign-up" type="password" name="credentials[password_confirmation]" value="" placeholder="password confirmation">
+                  <input type="submit" name="submit" value="Sign up!">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SIGN IN MODAL -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-in-modal">
       Sign In
       </button>
-              <div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
-                    </div>
-                    <div class="modal-body">
-                      <h3 class="sign-in-modal-header"></h3>
-                      <form id="sign-in">
-                        <input class="sign-in" type="text" name="credentials[email]" value="" placeholder="abc@example.com">
-                        <input class="sign-in" type="password" name="credentials[password]" value="" placeholder="password">
-                        <input type="submit" name="submit" value="Sign in!">
-                      </form>
-                    </div>
-                  </div>
-                </div>
               </div>
-            </p>
+              <div class="modal-body">
+                <h3 class="sign-in-modal-header"></h3>
+                <form id="sign-in">
+                  <input class="sign-in" type="text" name="credentials[email]" value="" placeholder="abc@example.com">
+                  <input class="sign-in" type="password" name="credentials[password]" value="" placeholder="password">
+                  <input type="submit" name="submit" value="Sign in!">
+                </form>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- END OF JUMBOTRON -->
+      </p>
+    </div>
+  </div>
+  <!-- END OF JUMBOTRON -->
 
-        <!-- CAROUSEL -->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
+  <!-- CAROUSEL -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
 
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <img src="https://s-media-cache-ak0.pinimg.com/originals/49/af/59/49af597ca10fceb7a1dfc8bcc6bc1026.jpg" alt="1" style="width:100%;">
-              <div class="carousel-caption">
-                <h3>Stay Organized</h3>
-                <p>Isn't it amazing?!</p>
-              </div>
-            </div>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="https://s-media-cache-ak0.pinimg.com/originals/49/af/59/49af597ca10fceb7a1dfc8bcc6bc1026.jpg" alt="1" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Stay Organized</h3>
+          <p>Isn't it amazing?!</p>
+        </div>
+      </div>
 
-            <div class="item">
-              <img src="http://www.ndtv.com/cooks/images/pizza-junk-food-600.jpg" alt="2" style="width:100%;">
-              <div class="carousel-caption">
-                <h3>Maximize your grocery trips</h3>
-                <p>WOW!</p>
-              </div>
-            </div>
+      <div class="item">
+        <img src="http://www.ndtv.com/cooks/images/pizza-junk-food-600.jpg" alt="2" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Maximize your grocery trips</h3>
+          <p>WOW!</p>
+        </div>
+      </div>
 
-            <div class="item">
-              <img src="https://static.pexels.com/photos/2215/food-salad-healthy-vegetables.jpg" alt="2" style="width:100%;">
-              <div class="carousel-caption">
-                <h3>Eat Healthy</h3>
-                <p>#Drops mic.</p>
-              </div>
-            </div>
-          </div>
+      <div class="item">
+        <img src="https://static.pexels.com/photos/2215/food-salad-healthy-vegetables.jpg" alt="2" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Eat Healthy</h3>
+          <p>#Drops mic.</p>
+        </div>
+      </div>
+    </div>
 
-          <!-- Left and right controls -->
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
     <span class="sr-only">Previous</span>
   </a>
-          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right"></span>
     <span class="sr-only">Next</span>
   </a>
-        </div>
-        <!-- END OF CAROUSEL -->
+  </div>
+  <!-- END OF CAROUSEL -->
 
-        <!-- RECIPE CARDS -->
-<div class="recipe-board"></div>
+  <!-- RECIPE CARDS -->
+  <div class="recipe-board">
 
+  </div>
 </body>
 
 </html>

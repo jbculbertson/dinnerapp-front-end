@@ -46,18 +46,9 @@ const showAllRecipes = function (data) {
   })
 }
 
-// const showMenu = function (data) {
-//   return $.ajax({
-//     url: config.apiOrigin + '/recipes',
-//     method: 'GET',
-//     data
-//   })
-// }
-
 module.exports = {
   createRecipe,
   showAllRecipes,
   deleteRecipe,
   updateRecipe
-  // showMenu
 }

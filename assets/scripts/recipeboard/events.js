@@ -34,16 +34,16 @@ const onShowAllRecipes = function (event) {
     .catch(ui.showAllRecipesFailure)
 }
 
-const onAddToMenu = function (event) {
-  // $(this).css('color', 'red')
-  const data = {
-    recipe: {
-      id: event.target.id,
-      on_menu: '0'
-    }
-  }
-  api.updateRecipe(data)
-}
+// const onAddToMenu = function (event) {
+//   // $(this).css('color', 'red')
+//   const data = {
+//     recipe: {
+//       id: event.target.id,
+//       on_menu: '0'
+//     }
+//   }
+//   api.updateRecipe(data)
+// }
 
 // const onShowMenu = function (event) {
 //   api.showMenu()
@@ -56,7 +56,7 @@ const addHandlers = function () {
   $('#show-all-recipes').on('click', onShowAllRecipes)
   $('#delete-recipe').on('submit', onDeleteRecipe)
   $('#update-recipe').on('submit', onUpdateRecipe)
-  $('.recipe-board').on('click', '.card', onAddToMenu)
+  // $('.recipe-board').on('click', '.card', onAddToMenu)
   // $('#show-menu-button').on('click', onShowMenu)
 }
 

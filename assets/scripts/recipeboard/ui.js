@@ -10,7 +10,7 @@ const createRecipeFailure = () => {
 }
 
 const showAllRecipesSuccess = (data) => {
-  store.recipe = data.recipe
+  store.recipes = data.recipes
   $('.recipe-board').empty()
   $('.create-recipe').val('')
   $('#create-recipe-modal').modal('hide')
@@ -24,17 +24,15 @@ const showAllRecipesSuccess = (data) => {
   // const menu = []
   // const onMenu = function (data) {
   //   for (let i = 0; i < data.recipes.length; i++) {
-  //     if (data.recipes[i].on_menu === '0') {
+  //     if (data.recipes[i].on_menu) {
   //       menu.push(data.recipes[i].name)
   //     }
   //   }
   //   return menu
   // }
-  // console.log(data)
-  // console.log(menu)
-  // console.log(onMenu)
-  //
-  // let showMenuHtml = showMenuTemplate({ recipes: menu })
+  // $('.menu-board').append(onMenu(data))
+
+  // let showMenuHtml = showMenuTemplate({ recipes: data.recipes })
   // $('.menu-board').append(showMenuHtml)
 }
 
