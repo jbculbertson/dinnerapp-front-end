@@ -8,7 +8,7 @@ const onCreateRecipe = function (event) {
   const data = getFormFields(this)
   event.preventDefault()
   api.createRecipe(data)
-    .then(ui.createRecipeSuccess)
+    .then(onShowAllRecipes)
     .catch(ui.createRecipeFailure)
 }
 
@@ -16,12 +16,11 @@ const onDeleteRecipe = function (event) {
   const data = getFormFields(this)
   event.preventDefault()
   api.deleteRecipe(data.recipe.id)
-    .then(ui.deleteRecipeSuccess)
+    .then(onShowAllRecipes)
     .catch(ui.deleteRecipeFailure)
 }
 
 const onShowAllRecipes = function (event) {
-  event.preventDefault()
   api.showAllRecipes()
     .then(ui.showAllRecipesSuccess)
     .catch(ui.showAllRecipesFailure)
