@@ -12,6 +12,14 @@ const onCreateRecipe = function (event) {
     .catch(ui.createRecipeFailure)
 }
 
+const onUpdateRecipe = function (event) {
+  const data = getFormFields(this)
+  event.preventDefault()
+  api.updateRecipe(data)
+    .then(onShowAllRecipes)
+    .catch(ui.updateRecipeFailure)
+}
+
 const onDeleteRecipe = function (event) {
   const data = getFormFields(this)
   event.preventDefault()
@@ -30,6 +38,7 @@ const addHandlers = function () {
   $('#create-recipe').on('submit', onCreateRecipe)
   $('#show-all-recipes').on('click', onShowAllRecipes)
   $('#delete-recipe').on('submit', onDeleteRecipe)
+  $('#update-recipe').on('submit', onUpdateRecipe)
 }
 
 module.exports = {

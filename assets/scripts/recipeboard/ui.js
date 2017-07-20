@@ -15,6 +15,8 @@ const showAllRecipesSuccess = (data) => {
   $('#create-recipe-modal').modal('hide')
   $('.delete-recipe').val('')
   $('#delete-recipe-modal').modal('hide')
+  $('.update-recipe').val('')
+  $('#update-recipe-modal').modal('hide')
   let showRecipesHtml = showRecipesTemplate({ recipes: data.recipes })
   $('.recipe-board').append(showRecipesHtml)
 }
