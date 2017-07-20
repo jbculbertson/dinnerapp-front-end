@@ -40,6 +40,10 @@ h2 {
   display: none;
 }
 
+.modal-body {
+    overflow-y: auto;
+}
+
 .navbar {
   display: none;
   margin-bottom: 0;

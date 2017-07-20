@@ -75,7 +75,7 @@
     <div class="row">
       <div class="col-xs-12">
           <!-- NEXT WEEKS MEALS MODAL -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#menu-modal">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#menu-modal" id="show-menu-button">
       Next Weeks Meals
       </button>
         <div class="modal fade" id="menu-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -88,7 +88,8 @@
       </button>
               </div>
               <div class="modal-body">
-                <!-- PLACEHOLDER FOR MENU -->
+                <div class="menu-board">
+                </div>
               </div>
             </div>
           </div>
@@ -135,7 +136,6 @@
                       <form id="create-recipe">
                         <input class="create-recipe" type="text" name="recipe[name]" value="" placeholder="recipe name">
                         <input class="create-recipe" type="text" name="recipe[ingredients]" value="" placeholder="ingredients">
-                        <input class="create-recipe" type="text" name="recipe[link]" value="" placeholder="link to recipe">
                         <input type="submit" name="submit" value="Create Recipe!">
                       </form>
                     </div>
@@ -186,7 +186,6 @@
                         <input class="update-recipe" type="text" name="recipe[id]" value="" placeholder="recipe id">
                         <input class="update-recipe" type="text" name="recipe[name]" value="" placeholder="recipe name">
                         <input class="update-recipe" type="text" name="recipe[ingredients]" value="" placeholder="ingredients">
-                        <input class="update-recipe" type="text" name="recipe[link]" value="" placeholder="link to recipe">
                         <input type="submit" name="submit" value="Update Recipe!">
                       </form>
                     </div>

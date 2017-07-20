@@ -4,6 +4,7 @@ const store = require('../store')
 const signUpSuccess = (data) => {
   store.user = data.user
   $('#sign-up-modal').modal('hide')
+  $('.sign-up-modal-header').text('')
 }
 
 const signUpFailure = () => {
@@ -20,10 +21,12 @@ const signInSuccess = (data) => {
   $('.navbar').show()
   $('.features').show()
   $('.messages').show()
+  $('.sign-in-modal-header').text('')
 }
 
 const signInFailure = () => {
   $('.sign-in-modal-header').text('Please make sure you have the correct credentials')
+  $('.sign-in').val('')
 }
 
 const signOutSuccess = () => {
@@ -34,6 +37,7 @@ const signOutSuccess = () => {
   $('.navbar').hide()
   $('.features').hide()
   $('.messages').hide()
+  $('.recipe-board').empty()
 }
 
 const signOutFailure = () => {
