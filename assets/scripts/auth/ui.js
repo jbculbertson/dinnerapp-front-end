@@ -5,6 +5,9 @@ const signUpSuccess = (data) => {
   store.user = data.user
   $('#sign-up-modal').modal('hide')
   $('.sign-up-modal-header').text('')
+  $('.sign-in-modal-header').text('')
+  $('.messages').show()
+  $('.message-board').text('Please login.  I know its annoying - I\'ll fix soon!')
 }
 
 const signUpFailure = () => {
