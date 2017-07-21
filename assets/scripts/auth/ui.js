@@ -2,12 +2,6 @@
 const store = require('../store')
 
 const signUpSuccess = (data) => {
-  store.user = data.user
-  $('#sign-up-modal').modal('hide')
-  $('.sign-up-modal-header').text('')
-  $('.sign-in-modal-header').text('')
-  $('.messages').show()
-  $('.message-board').text('Please login.  I know its annoying - I\'ll fix soon!')
 }
 
 const signUpFailure = () => {
@@ -19,12 +13,14 @@ const signInSuccess = (data) => {
   store.user = data.user
   $('.message-board').text('Welcome back, ' + store.user.email)
   $('#sign-in-modal').modal('hide')
+  $('#sign-up-modal').modal('hide')
+  $('.sign-up-modal-header').text('')
+  $('.sign-in-modal-header').text('')
   $('.jumbotron').hide()
   $('#myCarousel').hide()
   $('.navbar').show()
   $('.features').show()
   $('.messages').show()
-  $('.sign-in-modal-header').text('')
 }
 
 const signInFailure = () => {
