@@ -16,6 +16,10 @@ h2 {
   width: 20rem;
 }
 
+.carousel-caption {
+ background-color: rgba(160, 160, 160, 0.75);
+}
+
 .container-fluid {
   padding: 0;
 }
@@ -24,12 +28,17 @@ h2 {
   display: none;
 }
 
+.footer {
+  height: 300px;
+}
+
 .jumbotron {
   background-image: url("http://www.loriborgman.com/wp-content/uploads/2016/01/this-banana.jpg");
   background-size: cover;
   background-position: center;
   margin-left: 0;
   margin-right: 0;
+  margin-bottom: 0;
   height: 100vh;
 }
 
@@ -51,5 +60,5 @@ h2 {
 
 #myCarousel {
   margin: 0 auto;
-  max-width: 600px;
+  // max-width: 600px;
 }
