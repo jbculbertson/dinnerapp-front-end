@@ -13,12 +13,23 @@ h2 {
 }
 
 .card {
-  background-color: white;
+  background-color: rgb(150, 150, 150);
   border: 2px solid black;
   float: left;
+  height: 300px;
   margin: 5px;
   text-align: center;
-  width: 20rem;
+  width: 31%;
+}
+
+.card:hover {
+  background-color: rgb(175, 175, 175);
+  border: 4px solid black;
+}
+
+.card-block {
+  padding-bottom: 3px;
+  padding-top: 10px;
 }
 
 .carousel-caption {
@@ -26,7 +37,6 @@ h2 {
 }
 
 .container-fluid {
-  background-color: grey;
   padding: 0;
 }
 

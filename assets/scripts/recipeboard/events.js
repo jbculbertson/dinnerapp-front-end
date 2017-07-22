@@ -29,6 +29,7 @@ const onDeleteRecipe = function (event) {
 }
 
 const onShowAllRecipes = function (event) {
+  console.log(event.target)
   api.showAllRecipes()
     .then(ui.showAllRecipesSuccess)
     .catch(ui.showAllRecipesFailure)
