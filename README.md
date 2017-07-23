@@ -1,8 +1,8 @@
 # What's For Dinner?
 
-..* Link to front end repo: https://github.com/jbculbertson/dinnerapp-front-end
-..* Link to back end repo: https://github.com/jbculbertson/dinnerapp-back-end
-..* Link to live site: https://jbculbertson.github.io/dinnerapp-front-end/
+* Link to front end repo: https://github.com/jbculbertson/dinnerapp-front-end
+* Link to back end repo: https://github.com/jbculbertson/dinnerapp-back-end
+* Link to live site: https://jbculbertson.github.io/dinnerapp-front-end/
 
 
 
