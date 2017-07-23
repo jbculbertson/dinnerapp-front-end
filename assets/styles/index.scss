@@ -1,7 +1,6 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
-// .message-board -row{
 h2 {
   background-color: #3D9970;
   color: black;
@@ -41,6 +40,7 @@ h2 {
 }
 
 .features {
+  background-color: white;
   display: none;
 }
 
@@ -68,7 +68,22 @@ h2 {
 }
 
 .messages {
+  background-color: #3D9970;
   display: none;
+  font-size: 2rem;
+  margin-top: 0;
+  text-align: center;
+}
+
+
+h2 {
+  background-color: #3D9970;
+  color: black;
+  text-align: center;
+}
+
+.modal-backdrop {
+  position: relative;
 }
 
 .modal-body {
@@ -82,7 +97,21 @@ h2 {
 
 .recipe-board {
   margin-bottom: 50px;
+  margin-top: 150px;
 }
+
+.scroll-lock-header {
+  // height: 175px;
+  position: fixed;
+  width: 100%;
+}
+
+.scroll-open-body {
+  margin-top: 0px;
+  width: 100%;
+}
+
+
 
 #myCarousel {
   margin: 0 auto;

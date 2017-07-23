@@ -17,6 +17,8 @@
 
 <body class="container-fluid">
 
+<!-- DIV TO LOCK SCROLL HEADER WHEN LOGGED IN -->
+<div class="scroll-lock-header">
   <!-- NAVBAR -->
   <nav class="navbar navbar-default">
 
@@ -222,13 +224,18 @@
   <!-- <div class="message-board-row"> -->
   <div class="messages">
     <div class="col-xs-12">
-      <h2 class="message-board">IMPORTANT MESSAGE BOARD</h2>
+      <div>
+      <h2>IMPORTANT MESSAGE BOARD</h2>
+    </div>
     </div>
   </div>
   <!-- </div> -->
-
+</div>
+<!-- END OF HEADER, FOR SCROLL LOCK -->
+<!-- START OF DIV FOR SCROLL OPEN -->
+<div class="scroll-open-body">
   <!-- JUMBOTRON -->
-  <div class="lander">
+
     <div class="jumbotron">
       <h1 class="display-3">What's for dinner?</h1>
       <p class="lead">Tired of ordering out because you don't have the ingredients you need to make your favorite meal?</p>
@@ -286,7 +293,7 @@
         </div>
       </p>
     </div>
-  </div>
+
   <!-- END OF JUMBOTRON -->
 
   <!-- CAROUSEL -->
@@ -345,6 +352,8 @@
     <p>Made with love by Jeff Culbertson &copy 2017</p>
   </div>
   <!-- END OF FOOTER -->
+</div>
+<!-- END OF SCROLL OPEN BODY -->
 </body>
 
 </html>

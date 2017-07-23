@@ -11,7 +11,7 @@ const signUpFailure = () => {
 
 const signInSuccess = (data) => {
   store.user = data.user
-  $('.message-board').text('Welcome back, ' + store.user.email)
+  $('.messages').text('Welcome back, ' + store.user.email)
   $('#sign-in-modal').modal('hide')
   $('#sign-up-modal').modal('hide')
   $('.sign-up-modal-header').text('')
@@ -21,6 +21,7 @@ const signInSuccess = (data) => {
   $('.navbar').show()
   $('.features').show()
   $('.messages').show()
+  $('scroll-open-body').css('margin-top', '175px')
 }
 
 const signInFailure = () => {
