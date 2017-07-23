@@ -41,25 +41,25 @@ https://wwwjeffculbertsoncom.mybalsamiq.com/projects/whatsfordinner/prototype/Ne
 
 # USER STORIES
 As a user, I want to be able to:
-// auth features
-: create an account with a name, username and password
-: be able to login to view my account
-: be able to change my password
-: be able to logout
+* // auth features
+  * : create an account with a name, username and password
+  * : be able to login to view my account
+  * : be able to change my password
+  * : be able to logout
 
-// recipe board
-: be able to add my favorite recipes to my account, with properties of (name, ingredients, written directions, link, pic)
-: be able to click on specific ingredients in a recipe to add them to a grocery list
-: be able to click on specific recipe to add them to a menu list
-: be able to edit an existing recipe
-: be able to view other peoples recipes?
+* // recipe board
+  * : be able to add my favorite recipes to my account, with properties of (name, ingredients, written directions, link, pic)
+  * : be able to click on specific ingredients in a recipe to add them to a grocery list
+  * : be able to click on specific recipe to add them to a menu list
+  * : be able to edit an existing recipe
+  * : be able to view other peoples recipes?
 
-// menu list
-:be able to see all of the meals I’ve selected for this week
-:be able to see all of the meals I’ve selected for next week?
+* // menu list
+  * :be able to see all of the meals I’ve selected for this week
+  * :be able to see all of the meals I’ve selected for next week?
 
-// on my grocery list
-: be able to checkoff items from my grocery list once purchased
-: be able to reorganize items on my grocery list
-: be able to view my grocery list by itself
-: be able to add other ingredients to the grocery list as well
+* // on my grocery list
+  * : be able to checkoff items from my grocery list once purchased
+  * : be able to reorganize items on my grocery list
+  * : be able to view my grocery list by itself
+  * : be able to add other ingredients to the grocery list as well

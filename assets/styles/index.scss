@@ -23,8 +23,13 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
   float: left;
   height: 300px;
   margin: 5px;
-  text-align: center;
+  padding: 5px;
+  text-align: left;
   width: 31%;
+}
+
+.card-block {
+  top: 0;
 }
 
 .card:hover {
@@ -60,7 +65,7 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 }
 
 .create-recipe, .update-recipe, .sign-in, .sign-up  {
-  width: 75%
+  width: 50%
 }
 
 .jumbotron {
