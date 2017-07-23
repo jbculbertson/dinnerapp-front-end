@@ -1,17 +1,18 @@
-What's For Dinner?
+# What's For Dinner?
 
 Link to front end repo: https://github.com/jbculbertson/dinnerapp-front-end
 Link to back end repo: https://github.com/jbculbertson/dinnerapp-back-end
 Link to live site: https://jbculbertson.github.io/dinnerapp-front-end/
 
 
-What does this app do?
+
+# What does this app do?
 What's For Dinner is a project that I'm starting during project two at WDI.  As someone who likes to cook, I want to have all of my recipes in one easy place so that I can quickly make decisions on what meals I'll be cooking during the work week, and make sure I get all of the necessary ingredients when I go to the grocery store.
 
 To use the app, create an account and login!  You can quickly and easily add your favorite recipes.  When you want to do some meal planning, just login and you'll have all of your favorites just a click away.
 
 
-Approach to building
+# Approach to building
 When we were given this project prompt, I had a pretty good idea of what I was going to build.  From my experience in Project 1, I knew that I needed to plan ahead more this time.
 
 My first step was to plan out all of the user stories. The way I thought about it, I needed to build a site to achieve these goals - anything extra was out of the immediate scope.
@@ -33,12 +34,12 @@ Among other things, here are some things I'd like to improve:
 3.  I'd also like to make recipes sharable, so that you can share a good recipe with a friend.
 
 
-LINKS TO WIREFRAMES
+# LINKS TO WIREFRAMES
 https://wwwjeffculbertsoncom.mybalsamiq.com/projects/whatsfordinner/prototype/New%20mockup%202?key=238cebe745b787702f175cc9c329aa838949de62
 
 https://wwwjeffculbertsoncom.mybalsamiq.com/projects/whatsfordinner/prototype/New%20mockup?key=238cebe745b787702f175cc9c329aa838949de62
 
-USER STORIES
+# USER STORIES
 As a user, I want to be able to:
 // auth features
 : create an account with a name, username and password
