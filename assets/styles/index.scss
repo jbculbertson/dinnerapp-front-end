@@ -114,8 +114,6 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
   width: 100%;
 }
 
-
-
 #myCarousel {
   background-color: rgb(222, 222, 222);
   margin: 0 auto;
@@ -125,4 +123,11 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 .carousel-inner {
   max-width: 600px;
   margin: 0 auto;
+}
+
+
+@media (max-width: 440px) {
+  .card{
+    width: 95%;
+  }
 }

@@ -18,6 +18,7 @@ const signInSuccess = (data) => {
   $('.sign-in-modal-header').text('')
   $('.jumbotron').hide()
   $('#myCarousel').hide()
+  $('.about-row').hide()
   $('.navbar').show()
   $('.features').show()
   $('.messages').show()
