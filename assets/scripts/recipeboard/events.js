@@ -34,6 +34,28 @@ const onShowAllRecipes = function (event) {
     .catch(ui.showAllRecipesFailure)
 }
 
+const onCreateListItem = function (event) {
+  const data = getFormFields(this)
+  event.preventDefault()
+  api.createListItem(data)
+    .then(onShowAllListItems)
+    .catch(ui.createListItemFailure)
+}
+
+const onShowAllListItems = function (event) {
+  api.showAllListItems()
+    .then(ui.showAllListItemsSuccess)
+    .catch(ui.showAllListItemsFailure)
+}
+
+const onDeleteListItem = function (event) {
+  const data = getFormFields(this)
+  event.preventDefault()
+  api.deleteListItem(data.list_item.id)
+    .then(onShowAllListItems)
+    .catch(ui.deleteListItemFailure)
+}
+
 // const onAddToMenu = function (event) {
 //   // $(this).css('color', 'red')
 //   const data = {
@@ -56,6 +78,8 @@ const addHandlers = function () {
   $('#show-all-recipes').on('click', onShowAllRecipes)
   $('#delete-recipe').on('submit', onDeleteRecipe)
   $('#update-recipe').on('submit', onUpdateRecipe)
+  $('#grocery-list').on('submit', onCreateListItem)
+  $('#delete-item').on('submit', onDeleteListItem)
   // $('.recipe-board').on('click', '.card', onAddToMenu)
   // $('#show-menu-button').on('click', onShowMenu)
 }

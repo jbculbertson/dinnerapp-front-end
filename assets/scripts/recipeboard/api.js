@@ -46,9 +46,44 @@ const showAllRecipes = function (data) {
   })
 }
 
+const createListItem = function (data) {
+  return $.ajax({
+    url: config.apiOrigin + '/list_items',
+    method: 'POST',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
+    data
+  })
+}
+
+const showAllListItems = function (data) {
+  return $.ajax({
+    url: config.apiOrigin + '/list_items',
+    method: 'GET',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
+    data
+  })
+}
+
+const deleteListItem = function (data) {
+  return $.ajax({
+    url: config.apiOrigin + '/list_items/' + data,
+    method: 'DELETE',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    }
+  })
+}
+
 module.exports = {
   createRecipe,
   showAllRecipes,
   deleteRecipe,
-  updateRecipe
+  updateRecipe,
+  createListItem,
+  showAllListItems,
+  deleteListItem
 }

@@ -1,12 +1,26 @@
 'use strict'
 const store = require('../store')
 const showRecipesTemplate = require('../templates/show-recipes.handlebars')
-const showMenuTemplate = require('../templates/show-menu.handlebars')
+const showGroceryListTemplate = require('../templates/show-grocery_list.handlebars')
 
 const createRecipeSuccess = (data) => {
 }
 
 const createRecipeFailure = () => {
+}
+
+const createListItemSuccess = (data) => {
+}
+
+const showAllListItemsSuccess = (data) => {
+  store.list_items = data.list_items
+  $('.show-list').empty()
+  console.log(data.list_items)
+  let showGroceryListHtml = showGroceryListTemplate({ list_items: data.list_items })
+  $('.show-list').append(showGroceryListHtml)
+
+  $('.grocery-list').val('')
+  $('.delete-item').val('')
 }
 
 const showAllRecipesSuccess = (data) => {
@@ -39,12 +53,6 @@ const showAllRecipesSuccess = (data) => {
 const showAllRecipesFailure = () => {
 }
 
-const showMenuSuccess = (data) => {
-  // store.recipe = data.recipe
-  // let showMenuHtml = showMenuTemplate({ recipes: data.recipes })
-  // $('.menu-board').append(showMenuHtml)
-}
-
 const showMenuFailure = () => {
 }
 
@@ -57,10 +65,11 @@ const deleteRecipeFailure = () => {
 module.exports = {
   createRecipeSuccess,
   createRecipeFailure,
+  createListItemSuccess,
   showAllRecipesSuccess,
   showAllRecipesFailure,
   deleteRecipeSuccess,
   deleteRecipeFailure,
-  showMenuSuccess,
-  showMenuFailure
+  showMenuFailure,
+  showAllListItemsSuccess
 }

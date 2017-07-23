@@ -214,6 +214,36 @@
             </div>
           </div>
           <!-- END OF UPDATE RECIPE MODAL -->
+
+          <!-- START OF GROCERY LIST MODAL -->
+
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#grocery-list-modal">
+            Grocery List
+            </button>
+          <div class="modal fade" id="grocery-list-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Grocery List</h5>
+                    <div class="show-list"></div>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                </div>
+                <div class="modal-body">
+                  <form id="grocery-list">
+                    <input class="grocery-list" type="text" name="list_item[item]" value="" placeholder="item name">
+                    <input type="submit" name="submit" value="Add Item!">
+                  </form>
+                  <form id="delete-item">
+                    <input class="delete-item" type="text" name="list_item[id]" value="" placeholder="item id">
+                    <input type="submit" name="submit" value="Delete Item!">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END OF CREATE LIST MODAL -->
           <button type="button" class="btn btn-primary" data-toggle="modal" id="show-all-recipes">
             Show All Recipes
             </button>
