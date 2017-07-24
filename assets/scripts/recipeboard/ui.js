@@ -14,12 +14,10 @@ const createListItemSuccess = (data) => {
 
 const showAllListItemsSuccess = (data) => {
   store.list_items = data.list_items
-  $('.show-list').empty()
-  console.log(data.list_items)
+  $('#show-list').empty()
   let showGroceryListHtml = showGroceryListTemplate({ list_items: data.list_items })
-  $('.show-list').append(showGroceryListHtml)
-
-  $('.grocery-list').val('')
+  $('#show-list').append(showGroceryListHtml)
+  // $('.grocery-list').val('')
   $('.delete-item').val('')
 }
 
@@ -34,20 +32,6 @@ const showAllRecipesSuccess = (data) => {
   $('#update-recipe-modal').modal('hide')
   let showRecipesHtml = showRecipesTemplate({ recipes: data.recipes })
   $('.recipe-board').append(showRecipesHtml)
-
-  // const menu = []
-  // const onMenu = function (data) {
-  //   for (let i = 0; i < data.recipes.length; i++) {
-  //     if (data.recipes[i].on_menu) {
-  //       menu.push(data.recipes[i].name)
-  //     }
-  //   }
-  //   return menu
-  // }
-  // $('.menu-board').append(onMenu(data))
-
-  // let showMenuHtml = showMenuTemplate({ recipes: data.recipes })
-  // $('.menu-board').append(showMenuHtml)
 }
 
 const showAllRecipesFailure = () => {
@@ -62,6 +46,12 @@ const deleteRecipeSuccess = () => {
 const deleteRecipeFailure = () => {
 }
 
+const deleteListItemSuccess = () => {
+}
+
+const deleteListItemFailure = () => {
+}
+
 module.exports = {
   createRecipeSuccess,
   createRecipeFailure,
@@ -71,5 +61,7 @@ module.exports = {
   deleteRecipeSuccess,
   deleteRecipeFailure,
   showMenuFailure,
-  showAllListItemsSuccess
+  showAllListItemsSuccess,
+  deleteListItemSuccess,
+  deleteListItemFailure
 }

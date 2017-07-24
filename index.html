@@ -98,28 +98,6 @@
         </div> -->
           <!-- END OF MENU MODAL -->
 
-          <!-- GROCERY LIST MODAL -->
-
-          <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#grocery-modal">
-            Grocery List
-            </button>
-        <div class="modal fade" id="grocery-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Grocery List</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-              </div>
-              <div class="modal-body"> -->
-          <!-- PLACEHOLDER FOR GROCERY LIST -->
-          <!-- </div>
-            </div>
-          </div>
-        </div> -->
-          <!-- END OF GROCERY MODAL -->
-
           <!-- CREATE RECIPE MODAL -->
 
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#create-recipe-modal">
@@ -177,6 +155,7 @@
               </div>
             </div>
           </div>
+
           <!-- END OF DELETE RECIPE MODAL -->
           <!-- UPDATE RECIPE MODAL -->
 
@@ -217,32 +196,27 @@
 
           <!-- START OF GROCERY LIST MODAL -->
 
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#grocery-list-modal">
+          <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#grocery-list-modal">
             Grocery List
             </button>
           <div class="modal fade" id="grocery-list-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Grocery List</h5>
-                    <div class="show-list"></div>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
+                  <h5 class="modal-title" id="exampleModalLabel">Grocery List</h5>
+                    <div class="show-list"></div>
+
                 </div>
                 <div class="modal-body">
-                  <form id="grocery-list">
-                    <input class="grocery-list" type="text" name="list_item[item]" value="" placeholder="item name">
-                    <input type="submit" name="submit" value="Add Item!">
-                  </form>
-                  <form id="delete-item">
-                    <input class="delete-item" type="text" name="list_item[id]" value="" placeholder="item id">
-                    <input type="submit" name="submit" value="Delete Item!">
-                  </form>
+
+                  ...
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- END OF CREATE LIST MODAL -->
           <button type="button" class="btn btn-primary" data-toggle="modal" id="show-all-recipes">
             Show All Recipes
@@ -251,8 +225,8 @@
       </div>
     </div>
 
-    <!-- MESSAGE BOARD ROW -->
-    <!-- <div class="message-board-row"> -->
+    <!-- START OF MESSAGE BOARD ROW -->
+
     <div class="messages">
       <div class="col-xs-12">
         <div>
@@ -260,7 +234,35 @@
         </div>
       </div>
     </div>
-    <!-- </div> -->
+    <!-- END OF MESSAGE BOARD ROW -->
+    <!-- START OF GROCK LIST -->
+    <!-- <div class="show-list">
+      <div class="col-xs-12">
+        <h2></h2>
+      </div>
+    </div> -->
+  <!-- END OF GROCK LIST -->
+  <div class="list-card">
+    <div class="card-block">
+      <h3 class="card-title">Grocery List</h3>
+      <!-- <h4 class="card-id">Recipe ID #{{recipe.id}}</h4> -->
+      <!-- <h5 class="card-on_menu">On Menu: #{{recipe.on_menu}}</h5> -->
+    </div>
+    <ul class="list-group list-group-flush" id="show-list">
+      <li class="grocery_list_item"></li>
+    </ul>
+    <form id="delete-item">
+      <input class="delete-item" type="text" name="list_item[id]" value="" placeholder="item id">
+      <input type="submit" name="submit" value="Delete Item!">
+    </form>
+    <!-- <form id="grocery-list">
+      <input class="grocery-list" type="text" name="list_item[item]" value="" placeholder="item name">
+      <input type="submit" name="submit" value="Add Item!">
+    </form> -->
+    <!-- <form id="show-all-items">
+      <input type="submit" name="submit" value="Show All Items!">
+    </form> -->
+</div>
   </div>
   <!-- END OF HEADER, FOR SCROLL LOCK -->
   <!-- START OF DIV FOR SCROLL OPEN -->
@@ -390,15 +392,24 @@
   <!-- END OF CAROUSEL -->
 
   <!-- RECIPE CARDS -->
-  <div class="recipe-board">
+  <div class="recipe-row">
+    <div class="col-md-8">
+      <div class="recipe-board">
+
+    </div>
+    </div>
+
+
+
+
   </div>
+  <!-- END OF SCROLL OPEN BODY -->
+
   <!-- START OF FOOTER -->
   <div class="footer">
     <p>Made with love by Jeff Culbertson &copy 2017</p>
   </div>
   <!-- END OF FOOTER -->
-  </div>
-  <!-- END OF SCROLL OPEN BODY -->
 </body>
 
 </html>

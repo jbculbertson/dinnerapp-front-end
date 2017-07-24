@@ -22,7 +22,9 @@ const signInSuccess = (data) => {
   $('.navbar').show()
   $('.features').show()
   $('.messages').show()
-  $('scroll-open-body').css('margin-top', '175px')
+  $('.scroll-open-body').css('margin-top', '300px')
+  $('.list-card').show()
+
 }
 
 const signInFailure = () => {
