@@ -53,6 +53,7 @@ body{
 }
 
 .container {
+  display: none;
   margin: 0;
   padding: 0;
 }
@@ -130,9 +131,11 @@ body{
 }
 
 .recipe-board {
+  height: 650px;
   margin-bottom: 50px;
   // margin-top: 200px;
-  margin-left: 20%;
+  // margin-left: 20%;
+  overflow-y: scroll;
   width: 100%;
 }
 
@@ -146,7 +149,7 @@ body{
 
 .scroll-open-body {
   // margin-bottom: 50px;
-  margin-top: 0px;
+  margin-top: 20px;
   // padding-bottom: 100px;
   // position: relative;
   width: 100%;

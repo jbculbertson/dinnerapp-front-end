@@ -24,6 +24,7 @@ const signInSuccess = (data) => {
   $('.messages').show()
   // $('.scroll-open-body').css('margin-top', '100px')
   $('.list-card').show()
+  $('.container').show()
 }
 
 const signInFailure = () => {
@@ -40,6 +41,8 @@ const signOutSuccess = () => {
   $('.features').hide()
   $('.messages').hide()
   $('.recipe-board').empty()
+  $('.list-card').hide()
+  $('.container').hide()
 }
 
 const signOutFailure = () => {
