@@ -296,8 +296,8 @@
               <div class="modal-body">
                 <h3 class="sign-in-modal-header"></h3>
                 <form id="sign-in">
-                  <input class="sign-in" type="text" name="credentials[email]" value="jeff@jeff" placeholder="abc@example.com">
-                  <input class="sign-in" type="password" name="credentials[password]" value="jeff" placeholder="password">
+                  <input class="sign-in" type="text" name="credentials[email]" value="" placeholder="abc@example.com">
+                  <input class="sign-in" type="password" name="credentials[password]" value="" placeholder="password">
                   <input type="submit" name="submit" value="Sign in!">
                 </form>
               </div>
@@ -378,23 +378,16 @@
           <div class="list-card">
             <div class="card-block">
               <h3 class="card-title">Grocery List</h3>
-              <!-- <h4 class="card-id">Recipe ID #{{recipe.id}}</h4> -->
-              <!-- <h5 class="card-on_menu">On Menu: #{{recipe.on_menu}}</h5> -->
             </div>
             <ul class="list-group list-group-flush" id="show-list">
-              <li class="grocery_list_item"></li>
+
             </ul>
+
             <form id="delete-item">
               <input class="delete-item" type="text" name="list_item[id]" value="" placeholder="item id">
               <input type="submit" name="submit" value="Delete Item!">
             </form>
-            <!-- <form id="grocery-list">
-            <input class="grocery-list" type="text" name="list_item[item]" value="" placeholder="item name">
-            <input type="submit" name="submit" value="Add Item!">
-          </form> -->
-            <!-- <form id="show-all-items">
-            <input type="submit" name="submit" value="Show All Items!">
-          </form> -->
+
           </div>
         </div>
       <div class="col-md-8">
