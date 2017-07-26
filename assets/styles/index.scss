@@ -1,6 +1,12 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
+.about-body {
+  border: 2px solid black;
+
+  padding: 20px;
+}
+
 .about-text {
   margin: 0 auto;
   margin-top: 15%;
