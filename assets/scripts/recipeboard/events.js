@@ -21,9 +21,7 @@ const onUpdateRecipe = function (event) {
 }
 
 const onDeleteRecipe = function (event) {
-  const data = getFormFields(this)
-  event.preventDefault()
-  api.deleteRecipe(data.recipe.id)
+  api.deleteRecipe(this.dataset.id)
     .then(onShowAllRecipes)
     .catch(ui.deleteRecipeFailure)
 }
@@ -67,7 +65,7 @@ const onAddToGroceryList = function (event) {
 const addHandlers = function () {
   $('#create-recipe').on('submit', onCreateRecipe)
   $('#show-all-recipes').on('click', onShowAllRecipes)
-  $('#delete-recipe').on('submit', onDeleteRecipe)
+  $('.recipe-board').on('click', 'button', onDeleteRecipe)
   $('#update-recipe').on('submit', onUpdateRecipe)
   // $('#grocery-list').on('submit', onCreateListItem)
   // $('#delete-item').on('submit', onDeleteListItem)

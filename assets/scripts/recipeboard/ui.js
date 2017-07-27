@@ -26,7 +26,7 @@ const showAllRecipesSuccess = (data) => {
   $('.recipe-board').empty()
   $('.create-recipe').val('')
   $('#create-recipe-modal').modal('hide')
-  $('.delete-recipe').val('')
+  // $('.delete-recipe').val('')
   $('#delete-recipe-modal').modal('hide')
   $('.update-recipe').val('')
   $('#update-recipe-modal').modal('hide')

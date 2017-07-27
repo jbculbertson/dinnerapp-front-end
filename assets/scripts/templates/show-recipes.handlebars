@@ -3,8 +3,14 @@
 
 <div class="card">
   <div class="card-block">
-    <h3 class="card-title" id="{{recipe.id}}">{{recipe.name}}</h3>
-    <h4 class="card-id">Recipe ID #{{recipe.id}}</h4>
+    <h4 class="card-title" id="{{recipe.id}}">{{recipe.name}}</h4>
+    <h5 class="card-id">Recipe ID #{{recipe.id}}</h5>
+    <button id="delete-recipe" data-id="{{recipe.id}}">
+      Delete Recipe
+      </button>
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#delete-recipe-modal">
+      Delete Recipe
+      </button> -->
   </div>
   <ul class="list-group list-group-flush">
     <li id="{{recipe.ingredient1}}">{{recipe.ingredient1}}</li>
@@ -18,5 +24,24 @@
     <li id="{{recipe.ingredient9}}" >{{recipe.ingredient9}}</li>
     <li id="{{recipe.ingredient10}}">{{recipe.ingredient10}}</li>
   </ul>
+
+  <!-- <div class="modal fade" id="delete-recipe-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Delete Recipe</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+        </div>
+        <div class="modal-body">
+          <h3>Are you sure?</h3>
+
+            <button id="delete-recipe" data-id="{{recipe.id}}" type="submit" name="submit" value="Delete Recipe!">Delete Recipe</button>
+
+        </div>
+      </div>
+    </div>
+  </div> -->
 </div>
 {{/each}}
