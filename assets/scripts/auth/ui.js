@@ -11,6 +11,7 @@ const signUpFailure = () => {
 
 const signInSuccess = (data) => {
   store.user = data.user
+  console.log('success')
   $('.messages').text('Welcome back, ' + store.user.email)
   $('#sign-in-modal').modal('hide')
   $('#sign-up-modal').modal('hide')
