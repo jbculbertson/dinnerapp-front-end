@@ -47,9 +47,11 @@ const deleteRecipeFailure = () => {
 }
 
 const deleteListItemSuccess = () => {
+  console.log('success')
 }
 
 const deleteListItemFailure = () => {
+  console.log('fail')
 }
 
 module.exports = {
