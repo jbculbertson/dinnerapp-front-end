@@ -23,11 +23,10 @@ const showAllListItemsSuccess = (data) => {
 
 const showAllRecipesSuccess = (data) => {
   store.recipes = data.recipes
+  $('.messages').text('Click on an ingredient to add it to your grocery list!')
   $('.recipe-board').empty()
   $('.create-recipe').val('')
   $('#create-recipe-modal').modal('hide')
-  // $('.delete-recipe').val('')
-  $('#delete-recipe-modal').modal('hide')
   $('.update-recipe').val('')
   $('#update-recipe-modal').modal('hide')
   let showRecipesHtml = showRecipesTemplate({ recipes: data.recipes })

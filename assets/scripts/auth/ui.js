@@ -22,7 +22,6 @@ const signInSuccess = (data) => {
   $('.navbar').show()
   $('.features').show()
   $('.messages').show()
-  // $('.scroll-open-body').css('margin-top', '100px')
   $('.list-card').show()
   $('.container').show()
 }

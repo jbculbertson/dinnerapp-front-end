@@ -64,14 +64,10 @@ const onAddToGroceryList = function (event) {
 
 const addHandlers = function () {
   $('#create-recipe').on('submit', onCreateRecipe)
-  $('#show-all-recipes').on('click', onShowAllRecipes)
-  $('.recipe-board').on('click', 'button', onDeleteRecipe)
   $('#update-recipe').on('submit', onUpdateRecipe)
-  // $('#grocery-list').on('submit', onCreateListItem)
-  // $('#delete-item').on('submit', onDeleteListItem)
   $('.recipe-board').on('click', 'li', onAddToGroceryList)
-  // $('#show-all-items').on('click', onShowAllListItems)
   $('#show-list').on('click', 'button', onDeleteListItem)
+  $('.recipe-board').on('click', 'button', onDeleteRecipe)
 }
 
 module.exports = {

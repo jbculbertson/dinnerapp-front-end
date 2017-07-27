@@ -1,15 +1,11 @@
-
 {{#each list_items as |list_item|}}
   <div class="grocery-line row">
     <div class="col-md-8">
-      <p class="menu-item" id="{{list_item.id}}">Item ID: {{list_item.id}}, {{list_item.item}}</p>
+      <p class="menu-item" id="{{list_item.id}}">{{list_item.item}}</p>
     </div>
-
-    <!-- <form class="delete-grocery-item"> -->
     <div class="col-md-4">
       <button class="delete-grocery-item" data-id="{{list_item.id}}">Delete</button>
     </div>
-    <!-- </form> -->
   </div>
 
 {{/each}}

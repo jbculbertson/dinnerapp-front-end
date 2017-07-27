@@ -3,7 +3,8 @@
 const getFormFields = require(`../../../lib/get-form-fields`)
 const api = require('./api')
 const ui = require('./ui')
-const recipeEvents = require('../recipeboard/events')
+const recipeUi = require('../recipeboard/ui')
+const recipeApi = require('../recipeboard/api')
 
 const onSignUp = function (event) {
   event.preventDefault()
@@ -26,12 +27,15 @@ const onSignIn = function (event) {
   const data = getFormFields(this)
   event.preventDefault()
   api.signIn(data)
-    .then(ui.signInSuccess)
-      // function () {
-      // ui.signInSuccess
-      // recipeEvents.onShowAllRecipes
-      // recipeEvents.onShowAllListItems
-    // })
+    .done(ui.signInSuccess,
+      function (response) {
+        recipeApi.showAllRecipes(data)
+          .then(recipeUi.showAllRecipesSuccess)
+          .catch(recipeUi.showAllRecipesFailure)
+        recipeApi.showAllListItems(data)
+          .then(recipeUi.showAllListItemsSuccess)
+          .catch(recipeUi.showAllListItemsFailure)
+      })
     .catch(ui.signInFailure)
 }
 
