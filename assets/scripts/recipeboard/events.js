@@ -14,6 +14,11 @@ const onCreateRecipe = function (event) {
 
 const onUpdateRecipe = function (event) {
   const data = getFormFields(this)
+  console.log(data)
+  console.log(this)
+  console.log(event)
+  console.log(event.target
+  )
   event.preventDefault()
   api.updateRecipe(data)
     .then(onShowAllRecipes)
@@ -51,6 +56,10 @@ const onShowAllListItems = function (event) {
 
 const onDeleteListItem = function (event) {
   const data = getFormFields(this)
+  console.log(data)
+  console.log(this)
+  console.log(event.target)
+  console.log("yes")
   event.preventDefault()
   api.deleteListItem(data.list_item.id)
     .then(onShowAllListItems)
@@ -72,9 +81,10 @@ const addHandlers = function () {
   $('#delete-recipe').on('submit', onDeleteRecipe)
   $('#update-recipe').on('submit', onUpdateRecipe)
   // $('#grocery-list').on('submit', onCreateListItem)
-  $('#delete-item').on('submit', onDeleteListItem)
+  // $('#delete-item').on('submit', onDeleteListItem)
   $('.recipe-board').on('click', 'li', onAddToGroceryList)
   $('#show-all-items').on('click', onShowAllListItems)
+  $('.delete-grocery-item').on('submit', onDeleteListItem)
 }
 
 module.exports = {

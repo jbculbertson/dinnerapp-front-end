@@ -64,19 +64,23 @@ body{
   padding: 0;
 }
 
+.delete-grocery-item {
+  float: right;
+}
+
 .features {
   background-color: white;
   display: none;
 }
 
-.footer {
-  bottom: 0;
-  height: 50px;
-  line-height: 30px;
-  padding: 10px;
-  position: absolute;
-  // text-align: right;
-}
+// .footer {
+//   bottom: 0;
+//   height: 50px;
+//   line-height: 30px;
+//   padding: 10px;
+//   position: absolute;
+//   // text-align: right;
+// }
 
 .create-recipe, .update-recipe, .sign-in, .sign-up  {
   width: 50%
@@ -133,12 +137,12 @@ body{
 }
 
 .recipe-row {
-  margin-top: 100px;
+  margin-top: 37px;
 }
 
 .recipe-board {
-  height: 650px;
-  margin-bottom: 50px;
+  height: 700px;
+  // margin-bottom: 50px;
   // margin-top: 200px;
   // margin-left: 20%;
   overflow-y: scroll;
@@ -164,7 +168,7 @@ body{
 #myCarousel {
   background-color: rgb(222, 222, 222);
   margin: 0 auto;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
 }
 
 .carousel-inner {
