@@ -66,7 +66,7 @@ const addHandlers = function () {
   $('#create-recipe').on('submit', onCreateRecipe)
   $('#update-recipe').on('submit', onUpdateRecipe)
   $('.recipe-board').on('click', 'li', onAddToGroceryList)
-  $('#show-list').on('click', 'button', onDeleteListItem)
+  $('.ingredient-board').on('click', 'button', onDeleteListItem)
   $('.recipe-board').on('click', 'button', onDeleteRecipe)
 }
 

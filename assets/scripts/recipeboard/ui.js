@@ -14,9 +14,9 @@ const createListItemSuccess = (data) => {
 
 const showAllListItemsSuccess = (data) => {
   store.list_items = data.list_items
-  $('#show-list').empty()
+  $('.ingredient-board').empty()
   let showGroceryListHtml = showGroceryListTemplate({ list_items: data.list_items })
-  $('#show-list').append(showGroceryListHtml)
+  $('.ingredient-board').append(showGroceryListHtml)
   // $('.grocery-list').val('')
   $('.delete-item').val('')
 }
@@ -46,11 +46,9 @@ const deleteRecipeFailure = () => {
 }
 
 const deleteListItemSuccess = () => {
-  console.log('success')
 }
 
 const deleteListItemFailure = () => {
-  console.log('fail')
 }
 
 module.exports = {
