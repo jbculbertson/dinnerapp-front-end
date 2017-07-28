@@ -3,7 +3,6 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 
 .about-body {
   border: 2px solid black;
-
   padding: 20px;
 }
 
@@ -68,8 +67,8 @@ body{
   padding: 0;
 }
 
-.create-recipe, .update-recipe, .sign-in, .sign-up  {
-  width: 50%
+input {
+  width: 65%;
 }
 
 .grocery-list-title {
