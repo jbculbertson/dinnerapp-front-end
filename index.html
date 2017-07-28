@@ -187,29 +187,6 @@
       </div>
     </div>
   </div>
-  <!-- SIGN IN -->
-  <div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-<span aria-hidden="true">&times;</span>
-</button>
-        </div>
-        <div class="modal-body">
-          <h3 class="sign-in-modal-header"></h3>
-          <form id="sign-in">
-            <label>Email: </label>
-            <input class="sign-in" type="text" name="credentials[email]" value="" placeholder="abc@example.com"><br>
-            <label>Password: </label>
-            <input class="sign-in" type="password" name="credentials[password]" value="" placeholder="password"><br>
-            <input type="submit" name="submit" value="Sign in!">
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
 <!-- CHANGE PASSWORD MODAL -->
   <div class="modal fade" id="change-password-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -264,7 +241,6 @@
       </div>
     </div>
   </div>
-
   <div class="modal fade" id="update-recipe-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -277,7 +253,7 @@
         <div class="modal-body">
           <form id="update-recipe">
             <fieldset>
-            <label>Recipe ID: </label><input class="update-recipe_id" type="text" name="recipe[id]" value="" placeholder="recipe id"><br>
+            <input class="update-recipe_id hidden" type="text" name="recipe[id]" value="" placeholder="recipe id"><br>
             <label>Recipe Name: </label><input class="update-recipe_name" type="text" name="recipe[name]" value="" placeholder="recipe name"><br>
             <label>Ingredient: </label><input class="update-recipe_ingredient1" type="text" name="recipe[ingredient1]" value="" placeholder="ingredients"><br>
             <label>Ingredient: </label><input class="update-recipe_ingredient2" type="text" name="recipe[ingredient2]" value="" placeholder="ingredients"><br>
@@ -291,6 +267,29 @@
             <label>Ingredient: </label><input class="update-recipe_ingredient10" type="text" name="recipe[ingredient10]" value="" placeholder="ingredients"><br>
             <input type="submit" name="submit" value="Update Recipe!">
           </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- SIGN IN -->
+  <div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+        </div>
+        <div class="modal-body">
+          <h3 class="sign-in-modal-header"></h3>
+          <form id="sign-in">
+            <label>Email: </label>
+            <input class="sign-in" type="text" name="credentials[email]" value="" placeholder="abc@example.com"><br>
+            <label>Password: </label>
+            <input class="sign-in" type="password" name="credentials[password]" value="" placeholder="password"><br>
+            <input type="submit" name="submit" value="Sign in!">
           </form>
         </div>
       </div>
