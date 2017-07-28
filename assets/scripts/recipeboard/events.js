@@ -62,16 +62,40 @@ const onAddToGroceryList = function (event) {
   onCreateListItem(data)
 }
 
-// const onOpenUpdateRecipeModal = function (event) {
-//   const recipe_id = $(this).parent().attr('data-recipe-id')
-// }
+const onOpenUpdateRecipeModal = function () {
+  $('#update-recipe-modal').modal('show')
+  const id = (this.dataset.recipeId)
+  const name = (this.dataset.recipeName)
+  const ingredient1 = (this.dataset.recipeIngredient1)
+  const ingredient2 = (this.dataset.recipeIngredient2)
+  const ingredient3 = (this.dataset.recipeIngredient3)
+  const ingredient4 = (this.dataset.recipeIngredient4)
+  const ingredient5 = (this.dataset.recipeIngredient5)
+  const ingredient6 = (this.dataset.recipeIngredient6)
+  const ingredient7 = (this.dataset.recipeIngredient7)
+  const ingredient8 = (this.dataset.recipeIngredient8)
+  const ingredient9 = (this.dataset.recipeIngredient9)
+  const ingredient10 = (this.dataset.recipeIngredient10)
+  $('.update-recipe_id').val(id)
+  $('.update-recipe_name').val(name)
+  $('.update-recipe_ingredient1').val(ingredient1)
+  $('.update-recipe_ingredient2').val(ingredient2)
+  $('.update-recipe_ingredient3').val(ingredient3)
+  $('.update-recipe_ingredient4').val(ingredient4)
+  $('.update-recipe_ingredient5').val(ingredient5)
+  $('.update-recipe_ingredient6').val(ingredient6)
+  $('.update-recipe_ingredient7').val(ingredient7)
+  $('.update-recipe_ingredient8').val(ingredient8)
+  $('.update-recipe_ingredient9').val(ingredient9)
+  $('.update-recipe_ingredient10').val(ingredient10)
+}
 
 const addHandlers = function () {
   $('#create-recipe').on('submit', onCreateRecipe)
   $('.recipe-board').on('click', 'li', onAddToGroceryList)
   $('.ingredient-board').on('click', 'button', onDeleteListItem)
   $('#update-recipe').on('submit', onUpdateRecipe)
-  // $('.recipe-board').on('click', '#update-recipe-modal', onOpenUpdateRecipeModal)
+  $('.recipe-board').on('click', '#update-recipe-button', onOpenUpdateRecipeModal)
   $('.recipe-board').on('click', '#delete-recipe', onDeleteRecipe)
   // $('#delete-recipe').on('submit', onDeleteRecipe)
 }

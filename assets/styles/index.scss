@@ -68,11 +68,6 @@ body{
   padding: 0;
 }
 
-.features {
-  background-color: white;
-  display: none;
-}
-
 .create-recipe, .update-recipe, .sign-in, .sign-up  {
   width: 50%
 }
@@ -86,7 +81,7 @@ body{
   border: 2px solid black;
   display: none;
   height: 700px;
-  margin-top: 110px;
+  margin-top: 90px;
   overflow-y: scroll;
   padding: 15px;
   width: 100%;
@@ -129,7 +124,7 @@ body{
 
 .recipe-board {
   height: 700px;
-  margin-top: 110px;
+  margin-top: 90px;
   overflow-y: scroll;
   padding: 15px;
   width: 100%;

@@ -9,8 +9,24 @@
     <button id="delete-recipe" class="btn btn-danger" data-id="{{recipe.id}}">Delete
       </button>
       <!-- UPDATE RECIPE BUTTON -->
-      <button id="update-recipe" type="button" class="btn btn-primary" data-toggle="modal" data-target="#update-recipe-modal">
+      <button id="update-recipe-button" type="button" class="btn btn-primary" data-toggle="modal"
+      data-recipe-id="{{recipe.id}}"
+      data-recipe-name="{{recipe.name}}"
+      data-recipe-ingredient1="{{recipe.ingredient1}}"
+      data-recipe-ingredient2="{{recipe.ingredient2}}"
+      data-recipe-ingredient3="{{recipe.ingredient3}}"
+      data-recipe-ingredient4="{{recipe.ingredient4}}"
+      data-recipe-ingredient5="{{recipe.ingredient5}}"
+      data-recipe-ingredient6="{{recipe.ingredient6}}"
+      data-recipe-ingredient7="{{recipe.ingredient7}}"
+      data-recipe-ingredient8="{{recipe.ingredient8}}"
+      data-recipe-ingredient9="{{recipe.ingredient9}}"
+      data-recipe-ingredient10="{{recipe.ingredient10}}"
+      >
           Update Recipe</button>
+
+<!-- data-target="#update-recipe-modal" -->
+
   </div>
   <ul>
     <li id="{{recipe.ingredient1}}">{{recipe.ingredient1}}</li>

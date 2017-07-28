@@ -35,6 +35,9 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#create-recipe-modal">
+              Create Recipe
+              </button>
           <!-- Logout Button -->
           <button id="sign-out-button" type="button" class="btn btn-primary" data-toggle="modal">
       Logout
@@ -51,9 +54,7 @@
     <div class="features row">
       <div class="col-xs-12">
         <!-- CREATE RECIPE BUTTON -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#create-recipe-modal">
-            Create Recipe
-            </button>
+
       </div>
     </div>
 
@@ -269,18 +270,18 @@
         <div class="modal-body">
           <h3>Please resubmit all fields, even if they are not changing.</h3>
           <form id="update-recipe">
-            <input class="update-recipe" type="text" name="recipe[id]" value="" placeholder="recipe id">
-            <input class="update-recipe" type="text" name="recipe[name]" value="" placeholder="recipe name">
-            <input class="update-recipe" type="text" name="recipe[ingredient1]" value="" placeholder="ingredients">
-            <input class="update-recipe" type="text" name="recipe[ingredient2]" value="" placeholder="ingredients">
-            <input class="update-recipe" type="text" name="recipe[ingredient3]" value="" placeholder="ingredients">
-            <input class="update-recipe" type="text" name="recipe[ingredient4]" value="" placeholder="ingredients">
-            <input class="update-recipe" type="text" name="recipe[ingredient5]" value="" placeholder="ingredients">
-            <input class="update-recipe" type="text" name="recipe[ingredient6]" value="" placeholder="ingredients">
-            <input class="update-recipe" type="text" name="recipe[ingredient7]" value="" placeholder="ingredients">
-            <input class="update-recipe" type="text" name="recipe[ingredient8]" value="" placeholder="ingredients">
-            <input class="update-recipe" type="text" name="recipe[ingredient9]" value="" placeholder="ingredients">
-            <input class="update-recipe" type="text" name="recipe[ingredient10]" value="" placeholder="ingredients">
+            <input class="update-recipe_id" type="text" name="recipe[id]" value="" placeholder="recipe id">
+            <input class="update-recipe_name" type="text" name="recipe[name]" value="" placeholder="recipe name">
+            <input class="update-recipe_ingredient1" type="text" name="recipe[ingredient1]" value="" placeholder="ingredients">
+            <input class="update-recipe_ingredient2" type="text" name="recipe[ingredient2]" value="" placeholder="ingredients">
+            <input class="update-recipe_ingredient3" type="text" name="recipe[ingredient3]" value="" placeholder="ingredients">
+            <input class="update-recipe_ingredient4" type="text" name="recipe[ingredient4]" value="" placeholder="ingredients">
+            <input class="update-recipe_ingredient5" type="text" name="recipe[ingredient5]" value="" placeholder="ingredients">
+            <input class="update-recipe_ingredient6" type="text" name="recipe[ingredient6]" value="" placeholder="ingredients">
+            <input class="update-recipe_ingredient7" type="text" name="recipe[ingredient7]" value="" placeholder="ingredients">
+            <input class="update-recipe_ingredient8" type="text" name="recipe[ingredient8]" value="" placeholder="ingredients">
+            <input class="update-recipe_ingredient9" type="text" name="recipe[ingredient9]" value="" placeholder="ingredients">
+            <input class="update-recipe_ingredient10" type="text" name="recipe[ingredient10]" value="" placeholder="ingredients">
             <input type="submit" name="submit" value="Update Recipe!">
           </form>
         </div>
