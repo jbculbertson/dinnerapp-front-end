@@ -21,6 +21,7 @@ const signInSuccess = (data) => {
   $('.about-row').hide()
   $('.navbar').show()
   $('.messages').show()
+  $('.recipe-board').show()
   $('.ingredient-board').show()
   $('.container').show()
 }
@@ -38,7 +39,9 @@ const signOutSuccess = () => {
   $('.navbar').hide()
   $('.messages').hide()
   $('.recipe-board').empty()
+  $('.recipe-board').hide()
   $('.ingredient-board').empty()
+  $('.ingredient-board').hide()
   $('.container').hide()
 }
 
