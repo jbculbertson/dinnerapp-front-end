@@ -9,10 +9,11 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
   <!-- Do not add `script` tags unless you know what you are doing -->
+
   <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
   <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="https://use.fontawesome.com/7b5116c3a6.js"></script>
 </head>
-
 <!-- OVERALL CONTAINER -->
 
 <body class="container-fluid">
@@ -21,7 +22,6 @@
   <div class="scroll-lock-header">
     <!-- NAVBAR -->
     <nav class="navbar navbar-default">
-
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -53,10 +53,6 @@
         <!-- CREATE RECIPE BUTTON -->
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#create-recipe-modal">
             Create Recipe
-            </button>
-        <!-- UPDATE RECIPE BUTTON -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#update-recipe-modal">
-            Update Recipe
             </button>
       </div>
     </div>
@@ -208,37 +204,6 @@
       </div>
     </div>
   </div>
-<!-- UPDATE RECIPE MODAL -->
-  <div class="modal fade" id="update-recipe-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Update Recipe</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-        </div>
-        <div class="modal-body">
-          <h2>Please update all items, even if they remain the same</h2>
-          <form id="update-recipe">
-            <input class="update-recipe" type="text" name="recipe[id]" value="" placeholder="recipe id">
-            <input class="update-recipe" type="text" name="recipe[name]" value="" placeholder="recipe name">
-            <input class="update-recipe" type="text" name="recipe[ingredient1]" value="" placeholder="ingredients">
-            <input class="update-recipe" type="text" name="recipe[ingredient2]" value="" placeholder="ingredients">
-            <input class="update-recipe" type="text" name="recipe[ingredient3]" value="" placeholder="ingredients">
-            <input class="update-recipe" type="text" name="recipe[ingredient4]" value="" placeholder="ingredients">
-            <input class="update-recipe" type="text" name="recipe[ingredient5]" value="" placeholder="ingredients">
-            <input class="update-recipe" type="text" name="recipe[ingredient6]" value="" placeholder="ingredients">
-            <input class="update-recipe" type="text" name="recipe[ingredient7]" value="" placeholder="ingredients">
-            <input class="update-recipe" type="text" name="recipe[ingredient8]" value="" placeholder="ingredients">
-            <input class="update-recipe" type="text" name="recipe[ingredient9]" value="" placeholder="ingredients">
-            <input class="update-recipe" type="text" name="recipe[ingredient10]" value="" placeholder="ingredients">
-            <input type="submit" name="submit" value="Update Recipe!">
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
 <!-- CHANGE PASSWORD MODAL -->
   <div class="modal fade" id="change-password-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -291,6 +256,56 @@
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="update-recipe-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Update Recipe</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+        </div>
+        <div class="modal-body">
+          <h3>Please resubmit all fields, even if they are not changing.</h3>
+          <form id="update-recipe">
+            <input class="update-recipe" type="text" name="recipe[id]" value="" placeholder="recipe id">
+            <input class="update-recipe" type="text" name="recipe[name]" value="" placeholder="recipe name">
+            <input class="update-recipe" type="text" name="recipe[ingredient1]" value="" placeholder="ingredients">
+            <input class="update-recipe" type="text" name="recipe[ingredient2]" value="" placeholder="ingredients">
+            <input class="update-recipe" type="text" name="recipe[ingredient3]" value="" placeholder="ingredients">
+            <input class="update-recipe" type="text" name="recipe[ingredient4]" value="" placeholder="ingredients">
+            <input class="update-recipe" type="text" name="recipe[ingredient5]" value="" placeholder="ingredients">
+            <input class="update-recipe" type="text" name="recipe[ingredient6]" value="" placeholder="ingredients">
+            <input class="update-recipe" type="text" name="recipe[ingredient7]" value="" placeholder="ingredients">
+            <input class="update-recipe" type="text" name="recipe[ingredient8]" value="" placeholder="ingredients">
+            <input class="update-recipe" type="text" name="recipe[ingredient9]" value="" placeholder="ingredients">
+            <input class="update-recipe" type="text" name="recipe[ingredient10]" value="" placeholder="ingredients">
+            <input type="submit" name="submit" value="Update Recipe!">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- DELETE RECIPE MODAL -->
+  <!-- <div class="modal fade" id="delete-recipe-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Are you sure?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+        </div>
+        <div class="modal-body">
+          <h3 class="delete-recipe-modal-header"></h3>
+          <form id="delete-recipe">
+            <input type="submit" name="submit" value="Yes, delete!">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div> -->
 </body>
 
 </html>

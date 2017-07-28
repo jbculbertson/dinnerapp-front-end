@@ -21,6 +21,7 @@ const onUpdateRecipe = function (event) {
 }
 
 const onDeleteRecipe = function (event) {
+  event.preventDefault()
   api.deleteRecipe(this.dataset.id)
     .then(onShowAllRecipes)
     .catch(ui.deleteRecipeFailure)
@@ -33,7 +34,6 @@ const onShowAllRecipes = function (event) {
 }
 
 const onCreateListItem = function (data) {
-  // const data = getFormFields(this)
   event.preventDefault()
   api.createListItem(data)
     .then(onShowAllListItems)
@@ -41,13 +41,13 @@ const onCreateListItem = function (data) {
 }
 
 const onShowAllListItems = function (event) {
-  // event.preventDefault()
   api.showAllListItems()
     .then(ui.showAllListItemsSuccess)
     .catch(ui.showAllListItemsFailure)
 }
 
 const onDeleteListItem = function () {
+  // event.preventDefault()
   api.deleteListItem(this.dataset.id)
     .then(onShowAllListItems)
     .catch(ui.deleteListItemFailure)
@@ -62,12 +62,18 @@ const onAddToGroceryList = function (event) {
   onCreateListItem(data)
 }
 
+// const onOpenUpdateRecipeModal = function (event) {
+//   const recipe_id = $(this).parent().attr('data-recipe-id')
+// }
+
 const addHandlers = function () {
   $('#create-recipe').on('submit', onCreateRecipe)
-  $('#update-recipe').on('submit', onUpdateRecipe)
   $('.recipe-board').on('click', 'li', onAddToGroceryList)
   $('.ingredient-board').on('click', 'button', onDeleteListItem)
-  $('.recipe-board').on('click', 'button', onDeleteRecipe)
+  $('#update-recipe').on('submit', onUpdateRecipe)
+  // $('.recipe-board').on('click', '#update-recipe-modal', onOpenUpdateRecipeModal)
+  $('.recipe-board').on('click', '#delete-recipe', onDeleteRecipe)
+  // $('#delete-recipe').on('submit', onDeleteRecipe)
 }
 
 module.exports = {
