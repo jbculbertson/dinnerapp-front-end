@@ -38,7 +38,7 @@ const signOutSuccess = () => {
   $('.navbar').hide()
   $('.messages').hide()
   $('.recipe-board').empty()
-  $('.ingredient-board').hide()
+  $('.ingredient-board').empty()
   $('.container').hide()
 }
 
