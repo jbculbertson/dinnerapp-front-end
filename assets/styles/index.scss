@@ -69,18 +69,23 @@ body{
 
 input {
   width: 65%;
+  margin: 5px;
+}
+
+.grocery-board {
+  border: 2px solid black;
 }
 
 .grocery-list-title {
-    top: 70px;
+  display: none;
+  margin-top: 100px;
 }
 
 .ingredient-board {
   background-color: white;
-  border: 2px solid black;
   display: none;
   height: 700px;
-  margin-top: 90px;
+  margin-top: 10px;
   overflow-y: scroll;
   padding: 15px;
   width: 100%;
@@ -100,10 +105,15 @@ input {
   list-style-type: none;
 }
 
+.menu-item {
+  line-height: 10px;
+  text-align: center;
+}
+
 .messages {
   background-color: #3D9970;
   display: none;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-top: 0;
   text-align: center;
 }

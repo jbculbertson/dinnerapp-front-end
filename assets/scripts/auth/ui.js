@@ -23,6 +23,7 @@ const signInSuccess = (data) => {
   $('.messages').show()
   $('.recipe-board').show()
   $('.ingredient-board').show()
+  $('.grocery-list-title').show()
   $('.container').show()
 }
 
@@ -42,6 +43,7 @@ const signOutSuccess = () => {
   $('.recipe-board').hide()
   $('.ingredient-board').empty()
   $('.ingredient-board').hide()
+  $('.grocery-list-title').hide()
   $('.container').hide()
 }
 
