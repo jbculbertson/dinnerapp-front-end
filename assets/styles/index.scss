@@ -1,5 +1,6 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 .about-body {
   border: 2px solid black;
@@ -7,6 +8,7 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 }
 
 .about-text {
+  font-family: 'Open Sans', sans-serif;
   margin: 0 auto;
   margin-top: 15%;
   max-width: 50%;
