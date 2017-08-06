@@ -6,8 +6,8 @@
     <h4 class="card-title" id="{{recipe.id}}">{{recipe.name}}</h4>
     <h5 class="card-id">Recipe ID #{{recipe.id}}</h5>
     <!-- DELETE RECIPE BUTTON -->
-    <button id="delete-recipe" class="btn btn-danger" data-id="{{recipe.id}}">Delete
-      </button>
+    <button id="delete-recipe" class="btn btn-danger btn-sm" data-id="{{recipe.id}}">
+      <i class="fa fa-trash"></i></button>
       <!-- UPDATE RECIPE BUTTON -->
       <button id="update-recipe-button" type="button" class="btn btn-primary" data-toggle="modal"
       data-recipe-id="{{recipe.id}}"
@@ -22,7 +22,8 @@
       data-recipe-ingredient8="{{recipe.ingredient8}}"
       data-recipe-ingredient9="{{recipe.ingredient9}}"
       data-recipe-ingredient10="{{recipe.ingredient10}}"
-      >Update Recipe</button>
+      >
+      <i class="fa fa-pencil"></i></button>
   </div>
   <ul>
     <li id="{{recipe.ingredient1}}">{{recipe.ingredient1}}</li>
