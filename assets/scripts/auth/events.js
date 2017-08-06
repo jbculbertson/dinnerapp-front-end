@@ -29,6 +29,7 @@ const onSignIn = function (event) {
   api.signIn(data)
     .done(ui.signInSuccess,
       function (response) {
+        console.log("you made it within")
         recipeApi.showAllRecipes(data)
           .then(recipeUi.showAllRecipesSuccess)
           .catch(recipeUi.showAllRecipesFailure)
