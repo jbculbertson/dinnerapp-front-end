@@ -168,7 +168,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Change Password</h5>
+          <h3 class="modal-title" id="exampleModalLabel">Change Password</h3>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
   <span aria-hidden="true">&times;</span>
 </button>
@@ -176,13 +176,22 @@
         <div class="modal-body">
           <h3 class="change-password-modal-header"></h3>
           <form id="change-password">
-            <fieldset>
-              <label>Old Password: </label>
-              <input class="change-password" type="password" name="passwords[old]" value="" placeholder="Old Password"><br>
-              <label>New Password: </label>
-              <input class="change-password" type="password" name="passwords[new]" value="" placeholder="New Password"><br>
-              <input type="submit" name="submit" value="Change Password">
-            </fieldset>
+            <div class="form group">
+              <label class="col-sm-3">Old Password: </label>
+              <div class="col-sm-9">
+                <input class="change-password" type="password" name="passwords[old]" value="" placeholder="Old Password">
+              </div>
+            </div>
+            <div class="form group">
+              <label class="col-sm-3">New Password: </label>
+              <div class="col-sm-9">
+                <input class="change-password" type="password" name="passwords[new]" value="" placeholder="New Password">
+              </div>
+            </div>
+            <div class="col-sm-offset-3 col-sm-9">
+              <button type="submit" class="btn btn-default" name="submit" value="Change Password">Change Password</button>
+            </div>
+
           </form>
         </div>
       </div>
@@ -193,198 +202,258 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Create Recipe</h5>
+          <h3 class="modal-title" id="exampleModalLabel">Create Recipe</h3>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
         </div>
         <div class="modal-body">
           <form id="create-recipe">
-            <label>Recipe Name: </label><input class="create-recipe" type="text" name="recipe[name]" value="" placeholder="recipe name"><br>
-            <label>Ingredient: </label><input class="create-recipe" type="text" name="recipe[ingredient1]" value="" placeholder="ingredients"><br>
-            <label>Ingredient: </label><input class="create-recipe" type="text" name="recipe[ingredient2]" value="" placeholder="ingredients"><br>
-            <label>Ingredient: </label><input class="create-recipe" type="text" name="recipe[ingredient3]" value="" placeholder="ingredients"><br>
-            <label>Ingredient: </label><input class="create-recipe" type="text" name="recipe[ingredient4]" value="" placeholder="ingredients"><br>
-            <label>Ingredient: </label><input class="create-recipe" type="text" name="recipe[ingredient5]" value="" placeholder="ingredients"><br>
-            <label>Ingredient: </label><input class="create-recipe" type="text" name="recipe[ingredient6]" value="" placeholder="ingredients"><br>
-            <label>Ingredient: </label><input class="create-recipe" type="text" name="recipe[ingredient7]" value="" placeholder="ingredients"><br>
-            <label>Ingredient: </label><input class="create-recipe" type="text" name="recipe[ingredient8]" value="" placeholder="ingredients"><br>
-            <label>Ingredient: </label><input class="create-recipe" type="text" name="recipe[ingredient9]" value="" placeholder="ingredients"><br>
-            <label>Ingredient: </label><input class="create-recipe" type="text" name="recipe[ingredient10]" value="" placeholder="ingredients"><br>
-            <input type="submit" name="submit" value="Create Recipe!">
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="update-recipe-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3 class="modal-title" id="exampleModalLabel">Update Recipe</h3>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-        </div>
-        <div class="modal-body">
-          <form id="update-recipe">
-            <div class="form group">
-              <div class="col-sm-10">
-                <input class="update-recipe_id hidden" type="text" name="recipe[id]" value="" placeholder="recipe id">
-              </div>
-            </div>
             <div class="form group">
               <label class="col-sm-3">Recipe Name: </label>
-              <div class="col-sm-9">
-                <input class="update-recipe_name" type="text" name="recipe[name]" value="" placeholder="recipe name">
-              </div>
+                <div class="col-sm-9">
+              <input class="create-recipe" type="text" name="recipe[name]" value="" placeholder="recipe name">
             </div>
-            <div class="form group">
-              <label class="col-sm-3">Ingredient: </label>
-              <div class="col-sm-9">
-                <input class="update-recipe_ingredient1" type="text" name="recipe[ingredient1]" value="" placeholder="ingredients">
-              </div>
-            </div>
-            <div class="form group">
-              <label class="col-sm-3">Ingredient: </label>
-              <div class="col-sm-9">
-                <input class="update-recipe_ingredient2" type="text" name="recipe[ingredient2]" value="" placeholder="ingredients">
-              </div>
-            </div>
-            <div class="form group">
-              <label class="col-sm-3">Ingredient: </label>
-              <div class="col-sm-9">
-                <input class="update-recipe_ingredient3" type="text" name="recipe[ingredient3]" value="" placeholder="ingredients">
-              </div>
-            </div>
-            <div class="form group">
-              <label class="col-sm-3">Ingredient: </label>
-              <div class="col-sm-9">
-                <input class="update-recipe_ingredient4" type="text" name="recipe[ingredient4]" value="" placeholder="ingredients">
-              </div>
-            </div>
-            <div class="form group">
-              <label class="col-sm-3">Ingredient: </label>
-              <div class="col-sm-9">
-                <input class="update-recipe_ingredient5" type="text" name="recipe[ingredient5]" value="" placeholder="ingredients">
-              </div>
-            </div>
-            <div class="form group">
-              <label class="col-sm-3">Ingredient: </label>
-              <div class="col-sm-9">
-                <input class="update-recipe_ingredient6" type="text" name="recipe[ingredient6]" value="" placeholder="ingredients">
-              </div>
-            </div>
-            <div class="form group">
-              <label class="col-sm-3">Ingredient: </label>
-              <div class="col-sm-9">
-                <input class="update-recipe_ingredient7" type="text" name="recipe[ingredient7]" value="" placeholder="ingredients">
-              </div>
-            </div>
-            <div class="form group">
-              <label class="col-sm-3">Ingredient: </label>
-              <div class="col-sm-9">
-                <input class="update-recipe_ingredient8" type="text" name="recipe[ingredient8]" value="" placeholder="ingredients">
-              </div>
-            </div>
-            <div class="form group">
-              <label class="col-sm-3">Ingredient: </label>
-              <div class="col-sm-9">
-                <input class="update-recipe_ingredient9" type="text" name="recipe[ingredient9]" value="" placeholder="ingredients">
-              </div>
-            </div>
-            <div class="form group">
-              <label class="col-sm-3">Ingredient: </label>
-              <div class="col-sm-9">
-                <input class="update-recipe_ingredient10" type="text" name="recipe[ingredient10]" value="" placeholder="ingredients">
-              </div>
-            </div>
-            <div class="form group">
-              <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default" name="submit" value="Update Recipe!">Update Recipe</button>
-              </div>
-            </div>
-          </form>
         </div>
+        <div class="form group">
+          <label class="col-sm-3">Ingredient: </label>
+          <div class="col-sm-9">
+            <input class="create-recipe" type="text" name="recipe[ingredient1]" value="" placeholder="ingredients">
+          </div>
+        </div>
+      <div class="form group">
+        <label class="col-sm-3">Ingredient: </label>
+        <div class="col-sm-9">
+          <input class="create-recipe" type="text" name="recipe[ingredient2]" value="" placeholder="ingredients">
+        </div>
+      </div>
+    <div class="form group">
+      <label class="col-sm-3">Ingredient: </label>
+      <div class="col-sm-9">
+        <input class="create-recipe" type="text" name="recipe[ingredient3]" value="" placeholder="ingredients">
+      </div>
+    </div>
+  <div class="form group">
+    <label class="col-sm-3">Ingredient: </label>
+    <div class="col-sm-9">
+      <input class="create-recipe" type="text" name="recipe[ingredient4]" value="" placeholder="ingredients">
+    </div>
+  </div>
+  <div class="form group">
+    <label class="col-sm-3">Ingredient: </label>
+    <div class="col-sm-9">
+      <input class="create-recipe" type="text" name="recipe[ingredient5]" value="" placeholder="ingredients">
+    </div>
+  </div>
+  <div class="form group">
+    <label class="col-sm-3">Ingredient: </label>
+    <div class="col-sm-9">
+      <input class="create-recipe" type="text" name="recipe[ingredient6]" value="" placeholder="ingredients">
+    </div>
+  </div>
+  <div class="form group">
+    <label class="col-sm-3">Ingredient: </label>
+    <div class="col-sm-9">
+      <input class="create-recipe" type="text" name="recipe[ingredient7]" value="" placeholder="ingredients">
+    </div>
+  </div>
+  <div class="form group">
+    <label class="col-sm-3">Ingredient: </label>
+    <div class="col-sm-9">
+      <input class="create-recipe" type="text" name="recipe[ingredient8]" value="" placeholder="ingredients">
+    </div>
+  </div>
+  <div class="form group">
+    <label class="col-sm-3">Ingredient: </label>
+    <div class="col-sm-9">
+      <input class="create-recipe" type="text" name="recipe[ingredient9]" value="" placeholder="ingredients">
+    </div>
+  </div>
+  <div class="form group">
+    <label class="col-sm-3">Ingredient: </label>
+    <div class="col-sm-9">
+      <input class="create-recipe" type="text" name="recipe[ingredient10]" value="" placeholder="ingredients">
+    </div>
+  </div>
+  <div class="form group">
+    <div class="col-sm-offset-3 col-sm-9">
+      <button type="submit" class="btn btn-default" name="submit" value="Create Recipe!">Create Recipe</button>
+    </div>
+  </div>
+</body>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="update-recipe-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Update Recipe</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+      </div>
+      <div class="modal-body">
+        <form id="update-recipe">
+          <div class="form group">
+            <div class="col-sm-10">
+              <input class="update-recipe_id hidden" type="text" name="recipe[id]" value="" placeholder="recipe id">
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-3">Recipe Name: </label>
+            <div class="col-sm-9">
+              <input class="update-recipe_name" type="text" name="recipe[name]" value="" placeholder="recipe name">
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-3">Ingredient: </label>
+            <div class="col-sm-9">
+              <input class="update-recipe_ingredient1" type="text" name="recipe[ingredient1]" value="" placeholder="ingredients">
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-3">Ingredient: </label>
+            <div class="col-sm-9">
+              <input class="update-recipe_ingredient2" type="text" name="recipe[ingredient2]" value="" placeholder="ingredients">
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-3">Ingredient: </label>
+            <div class="col-sm-9">
+              <input class="update-recipe_ingredient3" type="text" name="recipe[ingredient3]" value="" placeholder="ingredients">
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-3">Ingredient: </label>
+            <div class="col-sm-9">
+              <input class="update-recipe_ingredient4" type="text" name="recipe[ingredient4]" value="" placeholder="ingredients">
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-3">Ingredient: </label>
+            <div class="col-sm-9">
+              <input class="update-recipe_ingredient5" type="text" name="recipe[ingredient5]" value="" placeholder="ingredients">
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-3">Ingredient: </label>
+            <div class="col-sm-9">
+              <input class="update-recipe_ingredient6" type="text" name="recipe[ingredient6]" value="" placeholder="ingredients">
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-3">Ingredient: </label>
+            <div class="col-sm-9">
+              <input class="update-recipe_ingredient7" type="text" name="recipe[ingredient7]" value="" placeholder="ingredients">
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-3">Ingredient: </label>
+            <div class="col-sm-9">
+              <input class="update-recipe_ingredient8" type="text" name="recipe[ingredient8]" value="" placeholder="ingredients">
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-3">Ingredient: </label>
+            <div class="col-sm-9">
+              <input class="update-recipe_ingredient9" type="text" name="recipe[ingredient9]" value="" placeholder="ingredients">
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-3">Ingredient: </label>
+            <div class="col-sm-9">
+              <input class="update-recipe_ingredient10" type="text" name="recipe[ingredient10]" value="" placeholder="ingredients">
+            </div>
+          </div>
+          <div class="form group">
+            <div class="col-sm-offset-3 col-sm-9">
+              <button type="submit" class="btn btn-default" name="submit" value="Update Recipe!">Update Recipe</button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
-  <!-- SIGN UP -->
-  <div class="modal fade" id="sign-up-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3 class="modal-title" id="exampleModalLabel">Sign Up</h3>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+</div>
+<!-- SIGN UP -->
+<div class="modal fade" id="sign-up-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Sign Up</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 <span aria-hidden="true">&times;</span>
 </button>
-        </div>
-        <div class="modal-body">
-          <h3 class="sign-up-modal-header"></h3>
-          <form id="sign-up">
-            <div class="form group">
-              <label class="col-sm-2">Email: </label>
-              <div class="col-sm-10">
-                <input class="sign-up" type="email" name="credentials[email]" value="" placeholder="abc@example.com"><br>
-              </div>
+      </div>
+      <div class="modal-body">
+        <h3 class="sign-up-modal-header"></h3>
+        <form id="sign-up">
+          <div class="form group">
+            <label class="col-sm-2">Email: </label>
+            <div class="col-sm-10">
+              <input class="sign-up" type="email" name="credentials[email]" value="" placeholder="abc@example.com"><br>
             </div>
-            <div class="form group">
-              <label class="col-sm-2">Password: </label>
-              <div class="col-sm-10">
-                <input class="sign-up" type="password" name="credentials[password]" value="" placeholder="password"><br>
-              </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-2">Password: </label>
+            <div class="col-sm-10">
+              <input class="sign-up" type="password" name="credentials[password]" value="" placeholder="password"><br>
             </div>
-            <div class="form group">
-              <label class="col-sm-2">Password: </label>
-              <div class="col-sm-10">
-                <input class="sign-up" type="password" name="credentials[password_confirmation]" value="" placeholder="password confirmation"><br>
-              </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-2">Password: </label>
+            <div class="col-sm-10">
+              <input class="sign-up" type="password" name="credentials[password_confirmation]" value="" placeholder="password confirmation"><br>
             </div>
-            <div class="form group">
-              <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default" name="submit" value="Sign up!">Sign Up</button>
-              </div>
+          </div>
+          <div class="form group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default" name="submit" value="Sign up!">Sign Up</button>
             </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
-  <!-- SIGN IN -->
-  <div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3 class="modal-title" id="exampleModalLabel">Sign In</h3>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+</div>
+<!-- SIGN IN -->
+<div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Sign In</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 <span aria-hidden="true">&times;</span>
 </button>
-        </div>
-        <div class="modal-body">
-          <h3 class="sign-in-modal-header"></h3>
-          <form id="sign-in">
-            <div class="form group">
-              <label class="col-sm-2">Email: </label>
-              <div class="col-sm-10">
-                <input class="sign-in" type="text" name="credentials[email]" value="" placeholder="abc@example.com">
-              </div>
+      </div>
+      <div class="modal-body">
+        <h3 class="sign-in-modal-header"></h3>
+        <form id="sign-in">
+          <div class="form group">
+            <label class="col-sm-2">Email: </label>
+            <div class="col-sm-10">
+              <input class="sign-in" type="text" name="credentials[email]" value="" placeholder="abc@example.com">
             </div>
-            <div class="form group">
-              <label class="col-sm-2">Password: </label>
-              <div class="col-sm-10">
-                <input class="sign-in" type="password" name="credentials[password]" value="" placeholder="password">
-              </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-2">Password: </label>
+            <div class="col-sm-10">
+              <input class="sign-in" type="password" name="credentials[password]" value="" placeholder="password">
             </div>
-            <div class="form group">
-              <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default" name="submit" value="Sign in!">Sign In</button>
-              </div>
+          </div>
+          <div class="form group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default" name="submit" value="Sign in!">Sign In</button>
             </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
+</div>
 </body>
 
 </html>
