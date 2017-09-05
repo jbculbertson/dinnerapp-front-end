@@ -28,6 +28,10 @@ body{
   padding: 4px;
 }
 
+.buttons {
+  float: right;
+}
+
 .card {
   background-color: rgb(150, 150, 150);
   border: 2px solid black;
@@ -91,6 +95,11 @@ input {
   overflow-y: scroll;
   padding: 15px;
   width: 100%;
+}
+
+.ingredient-list {
+  font-size: 1.5rem;
+  margin-bottom: 3px;
 }
 
 .jumbotron {

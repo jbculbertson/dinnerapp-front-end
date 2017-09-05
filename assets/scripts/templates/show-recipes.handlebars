@@ -1,41 +1,45 @@
 
 {{#each recipes as |recipe|}}
-
 <div class="card" data-=-id="{{recipe.id}}">
-  <div class="card-block">
+  <div class="row card-block">
+    <div class="col-sm-7">
     <h4 class="card-title" id="{{recipe.id}}">{{recipe.name}}</h4>
-    <!-- <h5 class="card-id">Recipe ID #{{recipe.id}}</h5> -->
-    <!-- DELETE RECIPE BUTTON -->
-    <button id="delete-recipe" class="btn btn-danger btn-sm" data-id="{{recipe.id}}">
-      <i class="fa fa-trash"></i></button>
-      <!-- UPDATE RECIPE BUTTON -->
-      <button id="update-recipe-button" type="button" class="btn btn-primary" data-toggle="modal"
-      data-recipe-id="{{recipe.id}}"
-      data-recipe-name="{{recipe.name}}"
-      data-recipe-ingredient1="{{recipe.ingredient1}}"
-      data-recipe-ingredient2="{{recipe.ingredient2}}"
-      data-recipe-ingredient3="{{recipe.ingredient3}}"
-      data-recipe-ingredient4="{{recipe.ingredient4}}"
-      data-recipe-ingredient5="{{recipe.ingredient5}}"
-      data-recipe-ingredient6="{{recipe.ingredient6}}"
-      data-recipe-ingredient7="{{recipe.ingredient7}}"
-      data-recipe-ingredient8="{{recipe.ingredient8}}"
-      data-recipe-ingredient9="{{recipe.ingredient9}}"
-      data-recipe-ingredient10="{{recipe.ingredient10}}"
-      >
-      <i class="fa fa-pencil"></i></button>
   </div>
-  <ul>
-    <li id="{{recipe.ingredient1}}">{{recipe.ingredient1}}</li>
-    <li id="{{recipe.ingredient2}}">{{recipe.ingredient2}}</li>
-    <li id="{{recipe.ingredient3}}">{{recipe.ingredient3}}</li>
-    <li id="{{recipe.ingredient4}}">{{recipe.ingredient4}}</li>
-    <li id="{{recipe.ingredient5}}">{{recipe.ingredient5}}</li>
-    <li id="{{recipe.ingredient6}}">{{recipe.ingredient6}}</li>
-    <li id="{{recipe.ingredient7}}">{{recipe.ingredient7}}</li>
-    <li id="{{recipe.ingredient8}}">{{recipe.ingredient8}}</li>
-    <li id="{{recipe.ingredient9}}" >{{recipe.ingredient9}}</li>
-    <li id="{{recipe.ingredient10}}">{{recipe.ingredient10}}</li>
+  <div class="col-sm-5">
+    <div class="buttons">
+      <button id="delete-recipe" class="btn btn-danger btn-sm" data-id="{{recipe.id}}">
+        <i class="fa fa-trash"></i></button>
+        <!-- UPDATE RECIPE BUTTON -->
+        <button id="update-recipe-button" type="button" class="btn btn-primary" data-toggle="modal"
+        data-recipe-id="{{recipe.id}}"
+        data-recipe-name="{{recipe.name}}"
+        data-recipe-ingredient1="{{recipe.ingredient1}}"
+        data-recipe-ingredient2="{{recipe.ingredient2}}"
+        data-recipe-ingredient3="{{recipe.ingredient3}}"
+        data-recipe-ingredient4="{{recipe.ingredient4}}"
+        data-recipe-ingredient5="{{recipe.ingredient5}}"
+        data-recipe-ingredient6="{{recipe.ingredient6}}"
+        data-recipe-ingredient7="{{recipe.ingredient7}}"
+        data-recipe-ingredient8="{{recipe.ingredient8}}"
+        data-recipe-ingredient9="{{recipe.ingredient9}}"
+        data-recipe-ingredient10="{{recipe.ingredient10}}"
+        >
+        <i class="fa fa-pencil"></i></button>
+      </div>
+</div>
+  </div>
+  <ul class="list-unstyled">
+    <li class="ingredient-list" id="{{recipe.ingredient1}}"><i class="fa fa-plus-square fa-fw"></i> {{recipe.ingredient1}}</li>
+    <li class="ingredient-list" id="{{recipe.ingredient2}}"><i class="fa fa-plus-square fa-fw"></i> {{recipe.ingredient2}}</li>
+    <li class="ingredient-list" id="{{recipe.ingredient3}}"><i class="fa fa-plus-square fa-fw"></i> {{recipe.ingredient3}}</li>
+    <li class="ingredient-list" id="{{recipe.ingredient4}}"><i class="fa fa-plus-square fa-fw"></i> {{recipe.ingredient4}}</li>
+    <li class="ingredient-list" id="{{recipe.ingredient5}}"><i class="fa fa-plus-square fa-fw"></i> {{recipe.ingredient5}}</li>
+    <li class="ingredient-list" id="{{recipe.ingredient6}}"><i class="fa fa-plus-square fa-fw"></i> {{recipe.ingredient6}}</li>
+    <li class="ingredient-list" id="{{recipe.ingredient7}}"><i class="fa fa-plus-square fa-fw"></i> {{recipe.ingredient7}}</li>
+    <li class="ingredient-list" id="{{recipe.ingredient8}}"><i class="fa fa-plus-square fa-fw"></i> {{recipe.ingredient8}}</li>
+    <li class="ingredient-list" id="{{recipe.ingredient9}}"><i class="fa fa-plus-square fa-fw"></i> {{recipe.ingredient9}}</li>
+    <li class="ingredient-list" id="{{recipe.ingredient10}}"><i class="fa fa-plus-square fa-fw"></i> {{recipe.ingredient10}}</li>
   </ul>
+
 </div>
 {{/each}}
