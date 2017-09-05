@@ -93,7 +93,7 @@ const onOpenUpdateRecipeModal = function () {
 const addHandlers = function () {
   $('#create-recipe').on('submit', onCreateRecipe)
   $('.recipe-board').on('click', 'li', onAddToGroceryList)
-  $('.ingredient-board').on('click', 'button', onDeleteListItem)
+  $('.ingredient-board').on('click', '#delete-grocery-item', onDeleteListItem)
   $('#update-recipe').on('submit', onUpdateRecipe)
   $('.recipe-board').on('click', '#update-recipe-button', onOpenUpdateRecipeModal)
   $('.recipe-board').on('click', '#delete-recipe', onDeleteRecipe)

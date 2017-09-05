@@ -82,6 +82,11 @@ input {
   border: 2px solid black;
 }
 
+.grocery-line {
+  border: 1px solid black;
+  margin-bottom: 2px;
+}
+
 .grocery-list-title {
   display: none;
   margin-top: 100px;
@@ -117,7 +122,7 @@ input {
 }
 
 .menu-item {
-  line-height: 10px;
+  // line-height: 10px;
   text-align: center;
 }
 
