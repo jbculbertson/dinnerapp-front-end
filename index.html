@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>What's For Dinner?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Do not add `link` tags unless you know what you are doing -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Do not add `script` tags unless you know what you are doing -->
+
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="https://use.fontawesome.com/7b5116c3a6.js"></script>
+</head>
+<!-- OVERALL CONTAINER -->
+
+<body class="container-fluid">
+
+  <!-- DIV TO LOCK SCROLL HEADER WHEN LOGGED IN -->
+  <div class="scroll-lock-header">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand">What's For Dinner?</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#create-recipe-modal">
+              Create Recipe
+              </button>
+          <!-- Logout Button -->
+          <button id="sign-out-button" type="button" class="btn btn-primary" data-toggle="modal">
+      Logout
+      </button>
+          <!-- CHANGE PASSWORD BUTTON -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#change-password-modal">
+  Change Password</button>
+        </ul>
+      </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+
+    <!-- FEATURE ROW - NEXT WEEKS MEALS AND GROCERY LIST -->
+    <div class="features row">
+      <div class="col-xs-12">
+        <!-- CREATE RECIPE BUTTON -->
+
+      </div>
+    </div>
+
+    <!-- START OF MESSAGE BOARD ROW -->
+    <div class="messages">
+      <div class="col-xs-12">
+        <div>
+          <h2>IMPORTANT MESSAGE BOARD</h2>
+        </div>
+      </div>
+    </div>
+    <!-- END OF MESSAGE BOARD ROW -->
+  </div>
+  <!-- END OF HEADER, FOR SCROLL LOCK -->
+
+  <!-- START OF DIV FOR SCROLL OPEN -->
+  <div class="scroll-open-body">
+    <!-- JUMBOTRON -->
+    <div class="jumbotron">
+      <h1 class="display-3">What's for dinner?</h1>
+      <p class="lead">Tired of ordering out because you don't have the ingredients you need to make your favorite meal?</p>
+      <hr class="my-4">
+      <p>This app makes meal planning easy and fun!</p>
+      <p class="lead">
+        <!-- SIGN UP BUTTON -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-up-modal">
+      Sign Up
+      </button>
+        <!-- SIGN IN BUTTON -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-in-modal">
+      Sign In
+      </button>
+      </p>
+    </div>
+    <!-- END OF JUMBOTRON -->
+    <!-- START OF ABOUT ME -->
+    <div class="about-row">
+      <div class="col-xs-12">
+        <div class="about-text">
+          <h3></h3>
+          <div class="about-body">
+            <h4>Do you often find yourself asking "What's for dinner?".</h4><br>
+            <h4>This app allows you to store your recipes online, and with</h4><br>
+            <h4>the click of a button, add items you need to a grocery list!</h4> <br>
+            <h3>Create an account and give it a try!</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF ABOUT ME -->
+    <!-- CAROUSEL -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="https://i.imgur.com/4zVOdd3.jpg" alt="1" style="width:100%;">
+          <div class="carousel-caption">
+            <h4>Stay Organized</h4>
+            <h3>Ensure you have everything you need to make your favorite meals!</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="https://i.imgur.com/VJ6jIHR.jpg" alt="2" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Make the most of your grocery trips</h3>
+            <p>Who has time to go back and forth to the grocery store?</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="https://i.imgur.com/L8FUU2P.jpg" alt="2" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Eat Healthy and Save Money</h3>
+            <p>Cooking at home will save you money, and give you healthier meal options.</p>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+    </div>
+    <!-- END OF CAROUSEL -->
+    <!-- RECIPE CARDS -->
+    <div class="recipe row">
+      <div class="col-md-9">
+        <div class="recipe-board">
+        </div>
+      </div>
+      <div class="col-md-3 grocery-board">
+        <h3 class="grocery-list-title">Grocery List</h3>
+        <div class="ingredient-board">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END OF SCROLL OPEN BODY -->
+
+  <!-- JUST MODALS AFTER THIS -->
+
+  <!-- CHANGE PASSWORD MODAL -->
+  <div class="modal fade" id="change-password-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">Change Password</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button>
+        </div>
+        <div class="modal-body">
+          <h3 class="change-password-modal-header"></h3>
+          <form id="change-password">
+            <div class="form group">
+              <label class="col-sm-3">Old Password: </label>
+              <div class="col-sm-9">
+                <input class="change-password" type="password" name="passwords[old]" value="" placeholder="Old Password">
+              </div>
+            </div>
+            <div class="form group">
+              <label class="col-sm-3">New Password: </label>
+              <div class="col-sm-9">
+                <input class="change-password" type="password" name="passwords[new]" value="" placeholder="New Password">
+              </div>
+            </div>
+            <div class="col-sm-offset-3 col-sm-9">
+              <button type="submit" class="btn btn-default" name="submit" value="Change Password">Change Password</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- CREATE RECIPE MODAL -->
+  <div class="modal fade" id="create-recipe-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">Create Recipe</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+        </div>
+        <div class="modal-body">
+          <form id="create-recipe">
+            <div class="form group">
+              <label class="col-sm-3">Recipe Name: </label>
+                <div class="col-sm-9">
+              <input class="create-recipe" type="text" name="recipe[name]" value="" placeholder="recipe name">
+            </div>
+        </div>
+        <div class="form group">
+          <label class="col-sm-3">Ingredient: </label>
+          <div class="col-sm-9">
+            <input class="create-recipe" type="text" name="recipe[ingredient1]" value="" placeholder="ingredients">
+          </div>
+        </div>
+      <div class="form group">
+        <label class="col-sm-3">Ingredient: </label>
+        <div class="col-sm-9">
+          <input class="create-recipe" type="text" name="recipe[ingredient2]" value="" placeholder="ingredients">
+        </div>
+      </div>
+    <div class="form group">
+      <label class="col-sm-3">Ingredient: </label>
+      <div class="col-sm-9">
+        <input class="create-recipe" type="text" name="recipe[ingredient3]" value="" placeholder="ingredients">
+      </div>
+    </div>
+  <div class="form group">
+    <label class="col-sm-3">Ingredient: </label>
+    <div class="col-sm-9">
+      <input class="create-recipe" type="text" name="recipe[ingredient4]" value="" placeholder="ingredients">
+    </div>
+  </div>
+  <div class="form group">
+    <label class="col-sm-3">Ingredient: </label>
+    <div class="col-sm-9">
+      <input class="create-recipe" type="text" name="recipe[ingredient5]" value="" placeholder="ingredients">
+    </div>
+  </div>
+  <div class="form group">
+    <label class="col-sm-3">Ingredient: </label>
+    <div class="col-sm-9">
+      <input class="create-recipe" type="text" name="recipe[ingredient6]" value="" placeholder="ingredients">
+    </div>
+  </div>
+  <div class="form group">
+    <label class="col-sm-3">Ingredient: </label>
+    <div class="col-sm-9">
+      <input class="create-recipe" type="text" name="recipe[ingredient7]" value="" placeholder="ingredients">
+    </div>
+  </div>
+  <div class="form group">
+    <label class="col-sm-3">Ingredient: </label>
+    <div class="col-sm-9">
+      <input class="create-recipe" type="text" name="recipe[ingredient8]" value="" placeholder="ingredients">
+    </div>
+  </div>
+  <div class="form group">
+    <label class="col-sm-3">Ingredient: </label>
+    <div class="col-sm-9">
+      <input class="create-recipe" type="text" name="recipe[ingredient9]" value="" placeholder="ingredients">
+    </div>
+  </div>
+  <div class="form group">
+    <label class="col-sm-3">Ingredient: </label>
+    <div class="col-sm-9">
+      <input class="create-recipe" type="text" name="recipe[ingredient10]" value="" placeholder="ingredients">
+    </div>
+  </div>
+  <div class="form group">
+    <div class="col-sm-offset-3 col-sm-9">
+      <button type="submit" class="btn btn-default" name="submit" value="Create Recipe!">Create Recipe</button>
+    </div>
+  </div>
+</body>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="update-recipe-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Update Recipe</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+      </div>
+      <div class="modal-body">
+        <form id="update-recipe">
+          <div class="form group">
+            <div class="col-sm-10">
+              <input class="update-recipe_id hidden" type="text" name="recipe[id]" value="" placeholder="recipe id">
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-3">Recipe Name: </label>
+            <div class="col-sm-9">
+              <input class="update-recipe_name" type="text" name="recipe[name]" value="" placeholder="recipe name">
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-3">Ingredient: </label>
+            <div class="col-sm-9">
+              <input class="update-recipe_ingredient1" type="text" name="recipe[ingredient1]" value="" placeholder="ingredients">
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-3">Ingredient: </label>
+            <div class="col-sm-9">
+              <input class="update-recipe_ingredient2" type="text" name="recipe[ingredient2]" value="" placeholder="ingredients">
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-3">Ingredient: </label>
+            <div class="col-sm-9">
+              <input class="update-recipe_ingredient3" type="text" name="recipe[ingredient3]" value="" placeholder="ingredients">
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-3">Ingredient: </label>
+            <div class="col-sm-9">
+              <input class="update-recipe_ingredient4" type="text" name="recipe[ingredient4]" value="" placeholder="ingredients">
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-3">Ingredient: </label>
+            <div class="col-sm-9">
+              <input class="update-recipe_ingredient5" type="text" name="recipe[ingredient5]" value="" placeholder="ingredients">
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-3">Ingredient: </label>
+            <div class="col-sm-9">
+              <input class="update-recipe_ingredient6" type="text" name="recipe[ingredient6]" value="" placeholder="ingredients">
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-3">Ingredient: </label>
+            <div class="col-sm-9">
+              <input class="update-recipe_ingredient7" type="text" name="recipe[ingredient7]" value="" placeholder="ingredients">
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-3">Ingredient: </label>
+            <div class="col-sm-9">
+              <input class="update-recipe_ingredient8" type="text" name="recipe[ingredient8]" value="" placeholder="ingredients">
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-3">Ingredient: </label>
+            <div class="col-sm-9">
+              <input class="update-recipe_ingredient9" type="text" name="recipe[ingredient9]" value="" placeholder="ingredients">
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-3">Ingredient: </label>
+            <div class="col-sm-9">
+              <input class="update-recipe_ingredient10" type="text" name="recipe[ingredient10]" value="" placeholder="ingredients">
+            </div>
+          </div>
+          <div class="form group">
+            <div class="col-sm-offset-3 col-sm-9">
+              <button type="submit" class="btn btn-default" name="submit" value="Update Recipe!">Update Recipe</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- SIGN UP -->
+<div class="modal fade" id="sign-up-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Sign Up</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+      </div>
+      <div class="modal-body">
+        <h3 class="sign-up-modal-header"></h3>
+        <form id="sign-up">
+          <div class="form group">
+            <label class="col-sm-2">Email: </label>
+            <div class="col-sm-10">
+              <input class="sign-up" type="email" name="credentials[email]" value="" placeholder="abc@example.com"><br>
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-2">Password: </label>
+            <div class="col-sm-10">
+              <input class="sign-up" type="password" name="credentials[password]" value="" placeholder="password"><br>
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-2">Password: </label>
+            <div class="col-sm-10">
+              <input class="sign-up" type="password" name="credentials[password_confirmation]" value="" placeholder="password confirmation"><br>
+            </div>
+          </div>
+          <div class="form group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default" name="submit" value="Sign up!">Sign Up</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- SIGN IN -->
+<div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Sign In</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+      </div>
+      <div class="modal-body">
+        <h3 class="sign-in-modal-header"></h3>
+        <form id="sign-in">
+          <div class="form group">
+            <label class="col-sm-2">Email: </label>
+            <div class="col-sm-10">
+              <input class="sign-in" type="text" name="credentials[email]" value="" placeholder="abc@example.com">
+            </div>
+          </div>
+          <div class="form group">
+            <label class="col-sm-2">Password: </label>
+            <div class="col-sm-10">
+              <input class="sign-in" type="password" name="credentials[password]" value="" placeholder="password">
+            </div>
+          </div>
+          <div class="form group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default" name="submit" value="Sign in!">Sign In</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
